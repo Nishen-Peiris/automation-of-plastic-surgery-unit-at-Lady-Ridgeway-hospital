@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    background-color: #a7d7f6;
+}
+
+div#main{
+    width:100%;
+   
+}
+div#header{
+    height:60px;
+    background-color: #0f5eac;
+}
+div#navi{
+    height:50px;background-color: #0f5eac;
+    color: #fff; padding-right: 20px; text-align: right; padding-top: 10px;
+    
+}
+div#contents{
+    min-height: 500px;
+}
+div#footer{
+    height: 100px;
+}
+
+.hea{
+    text-align: center; font-size: 40px; padding-top: 10px; color:  #082644;
+    
+}
+.fo{
+    text-align: center; font-style: italic; font-size: -1;
+    
+}
+
+.ali{text-align: center}
+
+.font{
+    color: #2d5269;
+}
+
+.font:hover {
+    color: #fff;
+}
+
+.font1{
+    color: #096dac;
+}
+
+
+
+
+
