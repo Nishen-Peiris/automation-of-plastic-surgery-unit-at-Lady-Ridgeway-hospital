@@ -69,22 +69,22 @@
                         Clinic NO:
                     </div>
                     <div class="col-lg-1 col-sm-1 col-md-1">
-                        <input id="mdcc" type="radio" name="clinic-no-type" value="MDCC" checked="checked"/> MDCC
+                        <input id="mdcc" type="radio" name="clinic_no_type" value="MDCC" checked="checked"/> MDCC
                         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                         <div class="">
-                            <input id="psc" type="radio" name="clinic-no-type" value="PSC"/> PSC
+                            <input id="psc" type="radio" name="clinic_no_type" value="PSC"/> PSC
                             <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="p_clincno" id="p_clinicno" placeholder="Clinic NO" class="form-control"
+                        <input id="clinic_no" name="clinic_no" placeholder="Clinic NO" class="form-control"
                                required="required"/>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-md-2">
                         BHT NO :
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="t_fname" id="t_fname" placeholder="BHT NO" class="form-control"
+                        <input id="BHT_no" name="BHT_no" placeholder="BHT NO" class="form-control"
                                required="required"/>
                     </div>
                 </div>
@@ -98,24 +98,24 @@
                 Reason For Surgery :
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">
-                <input id="congenital" type="radio" name="reason-for-surgery-type" value="Congenital"
+                <input id="reason_for_surgery_type" type="radio" name="reason_for_surgery_type" value="Congenital"
                        checked="checked"/>Congenital
                 <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                 <div class="">
-                    <input id="acquired" type="radio" name="reason-for-surgery-type" value="Acquired"/>Acquired
+                    <input id="reason_for_surgery_type" type="radio" name="reason_for_surgery_type" value="Acquired"/>Acquired
                 </div>
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">
-                <select id="reason-for-surgery" name="reason-for-surgery" class="btn dropdown-toggle">
-                    <option value="primary" selected="selected"> Primary</option>
-                    <option value="secondary"> Secondary</option>
+                <select id="reason_for_surgery" name="reason_for_surgery" class="btn dropdown-toggle">
+                    <option value="Primary" selected="selected"> Primary</option>
+                    <option value="Secondary"> Secondary</option>
                 </select>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Surgery Date :
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input id="surgery-date" name="surgery-date" type="date" placeholder="Surgery date" class="form-control"
+                <input id="surgery_date" name="surgery_date" type="date" placeholder="Surgery date" class="form-control"
                        required="required"/>
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
@@ -148,29 +148,13 @@
         <div class="row">
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="part-of-the-body-head" name="part-of-the-body-head" value="Head"/> Head
+                <input type="checkbox" id="part_of_the_body_head" name="part_of_the_body_head" value="1"/> Head
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="side-of-the-body-left" name="side-of-the-body-left" value="Left"/> Left
+                <input type="checkbox" id="side_of_the_body_left" name="side_of_the_body_left" value="1"/> Left
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="tissue-plane-skin" name="tissue-plane-skin" value="Skin"/> Skin
-            </div>
-            <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="part-of-the-body-upper-limb" name="part-of-the-body-upper-limb"
-                       value="Upper Limb"/> Upper Limb
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="side-of-the-body-right" name="side-of-the-body-right" value="Right"/> Right
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="tissue-plane-muscle-tendons" name="tissue-plane-muscle-tendons"
-                       value="Muscles/Tendons"/> Muscles/Tendons
+                <input type="checkbox" id="tissue_plane_skin" name="tissue_plane_skin" value="1"/> Skin
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
         </div>
@@ -178,14 +162,30 @@
         <div class="row">
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="part-of-the-body-upper-trunk" name="part-of-the-body-upper-trunk"
-                       value="Trunk"/> Trunk
+                <input type="checkbox" id="part_of_the_body_upper_limb" name="part_of_the_body_upper_limb"
+                       value="1"/> Upper Limb
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox" id="side_of_the_body_right" name="side_of_the_body_right" value="1"/> Right
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox" id="tissue_plane_muscle_tendons" name="tissue_plane_muscle_tendons"
+                       value="1"/> Muscles/Tendons
+            </div>
+            <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox" id="part_of_the_body_trunk" name="part_of_the_body_trunk"
+                       value="1"/> Trunk
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 &nbsp;
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="tissue-plane-arteries" name="tissue-plane-arteries" value="Arteries"/>
+                <input type="checkbox" id="tissue_plane_arteries" name="tissue_plane_arteries" value="1"/>
                 Arteries
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
@@ -194,14 +194,14 @@
         <div class="row">
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="part-of-the-body-lower-limb" name="part-of-the-body-lower-limb"
-                       value="Upper Limb"/> Lower Limb
+                <input type="checkbox" id="part_of_the_body_lower_limb" name="part_of_the_body_lower_limb"
+                       value="1"/> Lower Limb
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 &nbsp;
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="tissue-plane-veins" name="tissue-plane-veins" value="Veins"/> Veins
+                <input type="checkbox" id="tissue_plane_veins" name="tissue_plane_veins" value="1"/> Veins
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
@@ -214,7 +214,7 @@
                     &nbsp;
                 </div>
                 <div class="col-lg-2 col-sm-2 col-md-2">
-                    <input type="checkbox" id="tissue-plane-nerves" name="tissue-plane-nerves" value="Nerves"/> Nerves
+                    <input type="checkbox" id="tissue_plane_nerves" name="tissue_plane_nerves" value="1"/> Nerves
                 </div>
                 <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             </div>
@@ -242,16 +242,16 @@
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="head-eye" name="head-eye" value="1"/> Eye
+                <input type="checkbox" id="head_eye" name="head_eye" value="1"/> Eye
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="upper-limb-arm" name="upper-limb-arm" value="1"/> Arm
+                <input type="checkbox" id="upper_limb_arm" name="upper_limb_arm" value="1"/> Arm
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="trunk-chest" name="trunk-chest" value="1"/> Chest
+                <input type="checkbox" id="trunk_chest" name="trunk_chest" value="1"/> Chest
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="lower-limb-thigh" name="lower-limb-thigh" value="1"/> Thigh
+                <input type="checkbox" id="lower_limb_thigh" name="lower_limb_thigh" value="1"/> Thigh
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
         </div>
@@ -259,16 +259,16 @@
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="head-nose" name="head-nose" value="1"/> Nose
+                <input type="checkbox" id="head_nose" name="head_nose" value="1"/> Nose
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="upper-limb-forearm" name="upper-limb-forearm" value="1"/> Forearm
+                <input type="checkbox" id="upper_limb_forearm" name="upper_limb_forearm" value="1"/> Forearm
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="trunk-abdomen" name="trunk-abdomen" value="1"/> Abdomen
+                <input type="checkbox" id="trunk_abdomen" name="trunk_abdomen" value="1"/> Abdomen
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="lower-limb-leg" name="lower-limb-leg" value="1"/> Leg
+                <input type="checkbox" id="lower_limb_leg" name="lower_limb_leg" value="1"/> Leg
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
         </div>
@@ -276,17 +276,17 @@
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="head-ear" name="head-ear" value="1"/> Ear
+                <input type="checkbox" id="head_ear" name="head_ear" value="1"/> Ear
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="upper-limb-hand" name="upper-limb-hand" value="1"/> Hand
+                <input type="checkbox" id="upper_limb_hand" name="upper_limb_hand" value="1"/> Hand
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="trunk-back" name="trunk-back" value="1"/> Back
+                <input type="checkbox" id="trunk_back" name="trunk_back" value="1"/> Back
 
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="lower-limb-foot" name="lower-limb-foot" value="1"/> Foot
+                <input type="checkbox" id="lower_limb_foot" name="lower_limb_foot" value="1"/> Foot
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
         </div>
@@ -294,14 +294,14 @@
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="head-mouth" name="head-mouth" value="1"/> Mouth
+                <input type="checkbox" id="head_mouth" name="head_mouth" value="1"/> Mouth
             </div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="head-face" name="head-face" value="1"/> Face
+                <input type="checkbox" id="head_face" name="head_face" value="1"/> Face
             </div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
