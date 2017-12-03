@@ -86,7 +86,7 @@
             <form method="post" action="validate.php">
                 <input type="text" name="username" id="username"
                        placeholder="User Name"/>
-                <input type="text" name="pass" id="pass"
+                <input type="password" name="pass" id="pass"
                        placeholder="Password"/>
                 <font color="#f60909" align="center">
                     <h5><i> Please Login</i></h5>
@@ -94,7 +94,7 @@
                 <input type="submit" name="login" value="Login"
                        class="login login-submit"/>
                 <font color="#2009f6" align="center">
-                    <a href="forgotpassword.php"><h4><i>Forgot Password</i></h4></a>
+                    <h4 class="forget">Forgot Password??<a href="forgotpassword.php">click here</a></h4>
                 </font>
 
             </form>
@@ -112,4 +112,3 @@
 </body>
 
 </html>
-
