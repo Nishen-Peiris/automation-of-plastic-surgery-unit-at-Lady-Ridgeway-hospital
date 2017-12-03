@@ -70,7 +70,7 @@
     <div id="contents">
         <div class="login-card">
             <font color="#200">
-                <h1><b>Log-in</b></h1>
+                <h1><b>Login</b></h1>
             </font>
             <p class="alert-danger" id="msg">
                 <?php

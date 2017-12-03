@@ -31,9 +31,8 @@ $role_id=$_SESSION['psc_user_role_id']
                 <div>
                     <ol class="breadcrumb" >
                         <li class ="font1" class="active"  >Dashboard</li>                        
-                    </ol> 
-                    <h3 align="center"><?php echo $_SESSION['psc_user_role_name']; ?><small class="font1">Dashboard</small></h3>
-                    
+                    </ol>
+                    <h3 align="center" style="color: #181865;"><?php echo $_SESSION['psc_user_role_name']; ?> Dashboard</h3>
                 </div>
                 <HR /><br />
                 <!-- Start User Rights -->

@@ -24,8 +24,8 @@ div#footer{
 }
 
 .hea{
-    text-align: center; font-size: 40px; padding-top: 10px; color:  #082644;
-    
+    text-align: center; font-size: 40px; padding-top: 10px; color:  #bfbaba;
+
 }
 .fo{
     text-align: center; font-style: italic; font-size: -1;
@@ -46,7 +46,22 @@ div#footer{
     color: #096dac;
 }
 
+.mytable{
+    font-family: monospace;
+}
+.mytable th{
+    /*font-weight: 500;*/
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    border-top: solid #000000 1px;
+}
+.table>tbody>tr>th{
+    color: #096dac;
+}
 
 
-
-
+table {
+    display: block;
+    overflow-x: auto;
+    /*white-space: nowrap;*/
+}

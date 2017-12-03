@@ -55,7 +55,7 @@
                 <li class="font1" class="active">Add Pre Surgery Information</li>
             </ol>
             <h3 align="center">Add
-                <small class="font1">Pre Surgery Information</small>
+                Pre Surgery Information
             </h3>
         </div>
         <HR/>
