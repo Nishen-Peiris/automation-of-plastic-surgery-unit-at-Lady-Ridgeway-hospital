@@ -18,6 +18,7 @@ div#navi{
 }
 div#contents{
     min-height: 500px;
+    font-family: monospace;
 }
 div#footer{
     height: 100px;

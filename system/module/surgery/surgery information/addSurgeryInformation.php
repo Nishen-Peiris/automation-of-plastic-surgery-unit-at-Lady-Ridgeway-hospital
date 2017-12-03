@@ -52,7 +52,7 @@
                 <li class="font1" class="active">Pre Surgery Information</li>
             </ol>
             <h3 align="center">Add
-                <small class="font1">Surgery Information</small>
+                Surgery Information
             </h3>
         </div>
         <HR/>
@@ -169,6 +169,8 @@
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
         </div>
+        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
@@ -177,9 +179,9 @@
                 Assisted by :
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">
-                <input id="assistedBy1" name="assisted_by_1" type="text" required="required">
-                <input id="assistedBy2" name="assisted_by_2" type="text">
-                <input id="assistedBy3" name="assisted_by_3" type="text">
+                <input id="assistedBy1"  class="form-control" name="assisted_by_1" type="text" required="required">
+                <input id="assistedBy2"  class="form-control" name="assisted_by_2" type="text">
+                <input id="assistedBy3"  class="form-control" name="assisted_by_3" type="text">
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
@@ -217,5 +219,3 @@
 </div>
 </body>
 </html>
-
-

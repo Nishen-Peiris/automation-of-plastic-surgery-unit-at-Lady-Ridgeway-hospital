@@ -97,18 +97,18 @@ $pre_surgery_data = $conn->query($sql);
                 <!-- display field headings -->
                 <table border="1" class="table mytable">
                     <tr>
-                        <td colspan="2">Clinic</td>
-                        <td>BHT no.</td>
-                        <td>Reason</td>
-                        <td>Date</td>
-                        <td colspan="4">Part of the body</td>
-                        <td colspan="2">Side of the body</td>
-                        <td colspan="5">Tissue plane</td>
-                        <td colspan="5">Head</td>
-                        <td colspan="3">Upper Limb</td>
-                        <td colspan="3">Trunk</td>
-                        <td colspan="3">Lower Limb</td>
-                        <td colspan="5">Operation</td>
+                        <th colspan="2">Clinic</th>
+                        <th>BHT no.</th>
+                        <th>Reason</th>
+                        <th>Date</th>
+                        <th colspan="4">Part of the body</th>
+                        <th colspan="2">Side of the body</th>
+                        <th colspan="5">Tissue plane</th>
+                        <th colspan="5">Head</th>
+                        <th colspan="3">Upper Limb</th>
+                        <th colspan="3">Trunk</th>
+                        <th colspan="3">Lower Limb</th>
+                        <th colspan="5">Operation</th>
                     </tr>
                     <tr>
                         <td>type</td>
