@@ -52,7 +52,7 @@
                 <li class="font1" class="active">Post Surgery Information</li>
             </ol>
             <h3 align="center">Add
-                <small class="font1">Post Surgery Information</small>
+               Post Surgery Information
             </h3>
         </div>
         <HR/>
