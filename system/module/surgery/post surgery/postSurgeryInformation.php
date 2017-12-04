@@ -55,7 +55,7 @@ $post_surgery_data = $conn->query($sql);
                 <h3 align="center">Post Surgery</h3>
             </div>
             <HR/>
-            <div>
+            <div class="table-sec" style="padding: 0 20px;">
                 <!-------------------- Add and search -------------------->
                 <div class="row" style="padding-left: 20px">
                     <div class="col-lg-6 col-sm-6 col-md-6">
@@ -88,14 +88,15 @@ $post_surgery_data = $conn->query($sql);
                     ?>
                     <!-- display field headings -->
                     <table border="1" class="table mytable">
-                        <tr>
-                            <td>BHT no.</td>
-                            <td>Photograph</td>
-                            <td>Complications</td>
-                            <td>Post surgery investigations</td>
-                            <td>Date of discharge</td>
-                            <td>Discharge plan</td>
-                            <td>Operation</td>
+
+                        <tr class="table-header">
+                            <th>BHT no.</th>
+                            <th>Photograph</th>
+                            <th>Complications</th>
+                            <th>Post surgery investigations</th>
+                            <th>Date of discharge</th>
+                            <th>Discharge plan</th>
+                            <th>Operation</th>
                         </tr>
                         <?php
                         // output data of each row
