@@ -59,7 +59,9 @@ div#footer{
 .table>tbody>tr>th{
     color: #096dac;
 }
-
+.table-header{
+    background: #79b0b9;
+}
 
 table {
     display: block;

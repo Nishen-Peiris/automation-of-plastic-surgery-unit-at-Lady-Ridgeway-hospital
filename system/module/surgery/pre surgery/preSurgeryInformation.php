@@ -96,7 +96,7 @@ $pre_surgery_data = $conn->query($sql);
                 ?>
                 <!-- display field headings -->
                 <table border="1" class="table mytable">
-                    <tr>
+                    <tr class="table-header">
                         <th colspan="2">Clinic</th>
                         <th>BHT no.</th>
                         <th>Reason</th>
