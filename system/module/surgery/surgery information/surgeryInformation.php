@@ -53,6 +53,8 @@ $surgery_data = $conn->query($sql);
                     <li class="active"><font color="#096dac">Surgery</font></li>
                 </ol>
                 <h3 align="center">Surgery</h3>
+                <!-------------------- surgery calendar -------------------->
+                <a href="surgeryCalender.php" style="padding-left: 20px"><i class="glyphicon glyphicon-calendar"></i> Go to Surgery calendar</a>
             </div>
             <HR/>
             <div  class="table-sec" style="padding: 0 20px;">
@@ -66,6 +68,7 @@ $surgery_data = $conn->query($sql);
                                 Add
                             </button>
                         </a>
+
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">
                         <form action="../controller/teachercontroller.php?action=search"

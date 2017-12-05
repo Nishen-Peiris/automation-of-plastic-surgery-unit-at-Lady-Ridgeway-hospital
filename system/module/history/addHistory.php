@@ -55,7 +55,7 @@
                 <li class="font1" class="active">Add History</li>
             </ol>
             <h3 align="center">Add
-                <small class="font1">History</small>
+               History
             </h3>
         </div>
         <HR/>
