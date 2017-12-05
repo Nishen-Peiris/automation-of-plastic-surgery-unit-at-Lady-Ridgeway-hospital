@@ -55,7 +55,7 @@ $history_data = $conn->query($sql);
                 <h3 align="center">History</h3>
             </div>
             <HR/>
-            <div>
+            <div class="table-sec" style="padding: 0 20px;">
                 <!-------------------- Add and search -------------------->
                 <div class="row" style="padding-left: 20px">
                     <div class="col-lg-6 col-sm-6 col-md-6">
@@ -88,16 +88,16 @@ $history_data = $conn->query($sql);
                     ?>
                     <!-- display field headings -->
                     <table border="1" class="table mytable">
-                        <tr>
-                            <td>Clinic type</td>
-                            <td>Clinic no.</td>
-                            <td>BHT no.</td>
-                            <td>Presenting complain</td>
-                            <td>Past medical history</td>
-                            <td>Past surgical history</td>
-                            <td>Allergic history</td>
-                            <td>Drug history</td>
-                            <td>Diet history</td>
+                        <tr class="table-header">
+                            <th>Clinic type</th>
+                            <th>Clinic no.</th>
+                            <th>BHT no.</th>
+                            <th>Presenting complain</th>
+                            <th>Past medical history</th>
+                            <th>Past surgical history</th>
+                            <th>Allergic history</th>
+                            <th>Drug history</th>
+                            <th>Diet history</th>
                         </tr>
                         <?php
                         // output data of each row
