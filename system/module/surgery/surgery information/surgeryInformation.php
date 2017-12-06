@@ -55,7 +55,7 @@ $surgery_data = $conn->query($sql);
                 <h3 align="center">Surgery</h3>
             </div>
             <HR/>
-            <div  class="table-sec" style="padding: 0 20px;">
+            <div class="table-sec" style="padding: 0 20px;">
                 <!-------------------- Add and search -------------------->
                 <div class="row" style="padding-left: 20px">
                     <div class="col-lg-6 col-sm-6 col-md-6">
@@ -87,7 +87,7 @@ $surgery_data = $conn->query($sql);
                 if ($surgery_data->num_rows > 0) {
                     ?>
                     <!-- display field headings -->
-                    <table border="1"  class="table mytable">
+                    <table border="1" class="table mytable">
                         <tr class="table-header">
                             <th>BHT no.</th>
                             <th>Surgery date</th>
@@ -99,6 +99,7 @@ $surgery_data = $conn->query($sql);
                             <th>Assisted by</th>
                             <th>Assisted by</th>
                             <th>Assisted by</th>
+                            <th>Operation</th>
                         </tr>
                         <?php
                         // output data of each row
@@ -116,6 +117,11 @@ $surgery_data = $conn->query($sql);
                                 <td><?php echo $row["assisted_by_1"]; ?></td>
                                 <td><?php echo $row["assisted_by_2"]; ?></td>
                                 <td><?php echo $row["assisted_by_3"]; ?></td>
+                                <td>
+                                    <?php
+                                    echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                    ?>
+                                </td>
                             </tr>
                             <?php
                         }
