@@ -63,8 +63,22 @@ div#footer{
     background: #79b0b9;
 }
 
-table {
+.scrolling {
     display: block;
     overflow-x: auto;
     /*white-space: nowrap;*/
+}
+.immunization tr td input[type=checkbox]{
+    position: absolute;
+    right: 29px;
+}
+#list1{
+    list-style: none;
+    line-height: 2;
+    display: none;
+}
+#list2{
+    list-style: none;
+    line-height: 2;
+    display: none;
 }

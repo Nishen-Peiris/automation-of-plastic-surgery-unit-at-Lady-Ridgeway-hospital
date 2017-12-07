@@ -150,21 +150,17 @@
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 <b><u>Birth History :</u></b>
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">
             </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <b><u>Immunization History :</u></b>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Birth Weight :
@@ -174,17 +170,11 @@
                        class="form-control"/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="immunization_history_BCH" name="immunization_history_BCH" value="1"/> BCH
-                <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_panta_1_OPV_1" name="immunization_history_panta_1_OPV_1"
-                       value="1"/> Penta I + OPV I
-            </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Delivery :
@@ -196,16 +186,13 @@
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="immunization_history_panta_2_OPV_2_IPV"
-                       name="immunization_history_panta_2_OPV_2_IPV" value="1"/> Penta II + OPV II + IPV <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_panta_3_OPV_3" name="immunization_history_panta_3_OPV_3"
-                       value="1"/> Penta III + OPV III
+
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Mode of Delivery :
@@ -228,22 +215,12 @@
                        value="Cesarean"/>Cesarean Delivery
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="immunization_history_MMR_1" name="immunization_history_MMR_1" value="1"/>
-                MMR I <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_JE" name="immunization_history_JE" value="1"/> JE <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_DTP_OPV_4" name="immunization_history_DTP_OPV_4"
-                       value="1"/> DTP + OPV IV <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_MMR_2" name="immunization_history_MMR_2"
-                       value="1"/> MMR II
-            </div>
+
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Post natal Complication :
@@ -253,14 +230,7 @@
                        placeholder="Post natel Complications" class="form-control"/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="immunization_history_DT_OPV_5" name="immunization_history_DT_OPV_5"
-                       value="1"/> DT + OPV V <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input type="checkbox" id="immunization_history_adult_tetanus_toxid"
-                       name="immunization_history_adult_tetanus_toxid"
-                       value="1"/> Adult Tetanus Toxid
-            </div>
+
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
@@ -268,182 +238,43 @@
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <b><u>Other History :</u></b>
+                <b><u>Family History :</u></b>
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <b><u>Developmental History :</u></b>
-            </div>
+
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Diet History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="other_history_diet_history" id="other_history_diet_history" placeholder="Comment"
-                       class="form-control"/>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="developmental_history_gross_motor_status"
-                       name="developmental_history_gross_motor_status" value="1"/> Gross Motor
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="developmental_history_gross_motor" id="developmental_history_gross_motor" type="radio"
-                       value="Normal" checked="checked"/> Normal &nbsp;&nbsp;&nbsp;
-                <input name="developmental_history_gross_motor" id="developmental_history_gross_motor" type="radio"
-                       value="Abnormal"/> Abnormal &nbsp;&nbsp;&nbsp;
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Post Medical History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="other_history_post_medical_history_status" id="other_history_post_medical_history_status"
-                       type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
-                <input name="other_history_post_medical_history_status" id="other_history_post_medical_history_status"
-                       type="radio" value="0" checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input name="other_history_post_medical_history" id="other_history_post_medical_history"
-                       placeholder="Comment" class="form-control"/>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="developmental_history_fine_motor_and_vision_status"
-                       name="developmental_history_fine_motor_and_vision_status" value="1"/> Fine Motor and
-                Vision
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="developmental_history_fine_motor_and_vision"
-                       id="developmental_history_fine_motor_and_vision" type="radio" value="Normal"
-                       checked="checked"/> Normal &nbsp;&nbsp;&nbsp;
-                <input name="developmental_history_fine_motor_and_vision"
-                       id="developmental_history_fine_motor_and_vision" type="radio" value="Abnormal"/> Abnormal
-                &nbsp;&nbsp;&nbsp;
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Post Surgical History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="other_history_post_surgical_history_status" id="other_history_post_surgical_history_status"
-                       type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
-                <input name="other_history_post_surgical_history" id="other_history_post_surgical_history"
-                       type="radio" value="0" checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input name="other_history_post_surgical_history" id="other_history_post_surgical_history"
-                       placeholder="Comment" class="form-control"/>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="developmental_history_language_and_speech_status"
-                       name="developmental_history_language_and_speech_status" value="1"/> Language
-                and Speech
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="developmental_history_language_and_speech" id="developmental_history_language_and_speech"
-                       type="radio" value="Normal" checked="checked"/> Normal &nbsp;&nbsp;&nbsp;
-                <input name="developmental_history_language_and_speech" id="developmental_history_language_and_speech"
-                       type="radio" value="Abnormal"/> Abnormal &nbsp;&nbsp;&nbsp;
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Allergy History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="other_history_allergy_history_status" id="other_history_allergy_history_status"
-                       type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
-                <input name="other_history_allergy_history_status" id="other_history_allergy_history_status"
-                       type="radio" value="0" checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input name="other_history_allergy_history" id="other_history_allergy_history" placeholder="Comment"
-                       class="form-control"/>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="developmental_history_emotional_and_behavioural_status"
-                       name="developmental_history_emotional_and_behavioural_status" value="1"/>
-                Emotional and Behavior
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="developmental_history_emotional_and_behavioural"
-                       id="developmental_history_emotional_and_behavioural" type="radio" value="Normal"
-                       checked="checked"/> Normal
-                &nbsp;&nbsp;&nbsp;
-                <input name="developmental_history_emotional_and_behavioural"
-                       id="developmental_history_emotional_and_behavioural" type="radio" value="Abnormal"/> Abnormal
-                &nbsp;&nbsp;&nbsp;
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Drug History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                <input name="other_history_drug_history_status" id="other_history_drug_history_status" type="radio"
-                       value="1"/> YES &nbsp;&nbsp;&nbsp;
-                <input name="other_history_drug_history_status" id="other_history_drug_history_status" type="radio"
-                       value="0" checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input name="other_history_drug_history" id="other_history_drug_history" placeholder="Comment"
-                       class="form-control"/>
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-        </div>
-        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-        <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
-                Family History :
-            </div>
-            <div class="col-lg-2 col-sm-2 col-md-2">
+
+           <div class="col-lg-2 col-sm-2 col-md-2">
                 <input type="checkbox" id="other_history_family_history_consanguineous"
                        name="other_history_family_history_consanguineous"
                        value="1"/> Consanguineous <br/>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
                 <input name="other_history_family_history_consanguineous_status"
                        id="other_history_family_history_consanguineous_status" type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
                 <input name="other_history_family_history_consanguineous_status"
                        id="other_history_family_history_consanguineous_status" type="radio" value="0"
                        checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
                 <input type="checkbox" id="other_history_family_history_family_diseases"
                        name="other_history_family_history_family_diseases" value="1"/> Familiar
                 Diseases <br/>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
                 <input name="other_history_family_history_family_diseases_status"
                        id="other_history_family_history_family_diseases_status" type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
                 <input name="other_history_family_history_family_diseases_status"
                        id="other_history_family_history_family_diseases_status" type="radio" value="0"
                        checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
-                <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
-                <input name="other_history_family_history" id="other_history_family_history" placeholder="Comment"
-                       class="form-control"/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
@@ -452,6 +283,127 @@
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
         </div>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <b><u>Immunization :</u></b>
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12">&nbsp;</div>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            <div class="col-lg-8 col-sm-8 col-md-8">
+                <table class="table mytable immunization" border="1">
+                    <tr class="table-header">
+                        <th>Age</th>
+                        <th>Type of Vaccine</th>
+                    </tr>
+                    <tr>
+                        <td>At Birth</td>
+                        <td>BCG
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>BCG 2nd dose<br>
+                            (If no scar even at 6 months)
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2 months Completed</td>
+                        <td>Pentavalent 1
+                            <input type="checkbox" value="1"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>OPV1,FIPV
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">4 months Completed</td>
+                        <td>Pentavalent 2
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OPV 2
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IPV
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">6 months Completed</td>
+                        <td>Pentavalent 3
+                            <input type="checkbox" value="1"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>OPV 3
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9 months Completed </td>
+                        <td>Measles, Mumps, Rubella 1 (MMR 1)
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12 months Completed</td>
+                        <td>Live JE
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">18 months Completed</td>
+                        <td>DPT
+                            <input type="checkbox" value="1"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>OPV 4
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3 Years Completed </td>
+                        <td>Measles & Rubella (MR)/ MMR 2
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5 Years Completed</td>
+                        <td>D.T
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OPV 5
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11 Years Completed</td>
+                        <td>Adult Tetanus & diphthria (aTd)
+                            <input type="checkbox" value="1"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
