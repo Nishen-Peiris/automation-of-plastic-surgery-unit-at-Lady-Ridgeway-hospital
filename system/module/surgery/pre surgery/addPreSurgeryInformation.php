@@ -7,10 +7,25 @@
     <link rel="stylesheet" type="text/css"
           href="../../../css/mainlayout.css"/>
 
-    <script type="text/javascript" src="../../../js/jquery-1.8.3.min.js">
+    <script type="text/javascript" src="../../../js/jquery-3.1.1.min.js">
 
     </script>
     <script type="text/javascript">
+        //for showing hidden list
+        $(document).ready(function () {
+            $('#chk1').click(function () {
+                if (this.checked)
+                    $('#list1').fadeIn('slow');
+                else
+                    $('#list1').fadeOut('slow');
+            });
+            $('#chk2').click(function () {
+                if (this.checked)
+                    $('#list2').fadeIn('slow');
+                else
+                    $('#list2').fadeOut('slow');
+            });
+        });
         //Ajax for role Rights
         function showRights(str) {
             var xmlhttp;
@@ -296,12 +311,69 @@
             <div class="col-lg-2 col-sm-2 col-md-2">
                 <input type="checkbox" id="head_mouth" name="head_mouth" value="1"/> Mouth
             </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Axilla
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Genitalia
+                <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            </div>
+
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 <input type="checkbox" id="head_face" name="head_face" value="1"/> Face
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Elbow
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Knee
+                <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Wrist
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox"  value="1"/> Ankle
+                <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox" id="chk1"  value="1"/> Fingers
+                <ul id="list1">
+                    <li><input type="checkbox"  value="1"/> Thumb</li>
+                    <li><input type="checkbox"  value="1"/> Index</li>
+                    <li><input type="checkbox"  value="1"/> Middle</li>
+                    <li><input type="checkbox"  value="1"/> Ring</li>
+                    <li><input type="checkbox"  value="1"/> Little</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-2"></div>
+            <div class="col-lg-2 col-sm-2 col-md-2">
+                <input type="checkbox" id="chk2"  value="1"/> Toes
+                <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
+                <ul id="list2">
+                    <li><input type="checkbox"  value="1"/> 1</li>
+                    <li><input type="checkbox"  value="1"/> 2</li>
+                    <li><input type="checkbox"  value="1"/> 3</li>
+                    <li><input type="checkbox"  value="1"/> 4</li>
+                    <li><input type="checkbox"  value="1"/> 5</li>
+                </ul>
             </div>
         </div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>

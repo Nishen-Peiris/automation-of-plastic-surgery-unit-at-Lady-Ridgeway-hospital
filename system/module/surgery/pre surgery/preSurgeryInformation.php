@@ -95,7 +95,7 @@ $pre_surgery_data = $conn->query($sql);
             if ($pre_surgery_data->num_rows > 0) {
                 ?>
                 <!-- display field headings -->
-                <table border="1" class="table mytable">
+                <table border="1" class="table mytable scrolling">
                     <tr class="table-header">
                         <th colspan="2">Clinic</th>
                         <th>BHT no.</th>

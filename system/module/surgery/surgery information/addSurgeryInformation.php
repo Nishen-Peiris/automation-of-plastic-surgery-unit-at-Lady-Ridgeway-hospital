@@ -9,7 +9,7 @@
     <script type="text/javascript" src="../../../js/jquery-1.8.3.min.js">
     </script>
     <script type="text/javascript">
-        //Ajax for role Rights
+         //Ajax for role Rights
         function showRights(str) {
             var xmlhttp;
             if (str == "") {
@@ -92,7 +92,7 @@
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
         </div>
-        <a href="">Surgery calender</a>
+
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">

@@ -36,6 +36,9 @@
 
 </body>
 
+<?php
+?>
+
 <script>
 
     $(document).ready(function() {
