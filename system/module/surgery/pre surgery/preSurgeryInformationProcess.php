@@ -31,6 +31,10 @@
 //upper_limb_arm
 //upper_limb_forearm
 //upper_limb_hand
+//upper_limb_axilla
+//upper_limb_elbow
+//upper_limb_wrist
+//upper_limb_fingers
 
 //trunk_chest
 //trunk_abdomen
@@ -39,6 +43,10 @@
 //lower_limb_thigh
 //lower_limb_leg
 //lower_limb_foot
+//lower_limb_genitalia
+//lower_limb_knee
+//lower_limb_ankle
+//lower_limb_toes
 
 //tissue_plane_arteries
 //tissue_plane_nerves
@@ -49,7 +57,7 @@ include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 
 // initialize all the variables
-$clinic_no_type = $clinic_no = $BHT_no = $reason_for_surgery_type = $reason_for_surgery = $surgery_date = $part_of_the_body_head = $part_of_the_body_upper_limb = $part_of_the_body_trunk = $side_of_the_body_left = $side_of_the_body_right = $tissue_plane_skin = $tissue_plane_muscle_tendons = $tissue_plane_veins = $head_eye = $head_nose = $head_ear = $head_mouth = $head_face = $upper_limb_arm = $upper_limb_forearm = $upper_limb_hand = $trunk_chest = $trunk_abdomen = $trunk_back = $lower_limb_thigh = $lower_limb_leg = $lower_limb_foot = $status = "";
+$clinic_no_type = $clinic_no = $BHT_no = $reason_for_surgery_type = $reason_for_surgery = $surgery_date = $part_of_the_body_head = $part_of_the_body_upper_limb = $part_of_the_body_trunk = $side_of_the_body_left = $side_of_the_body_right = $tissue_plane_skin = $tissue_plane_muscle_tendons = $tissue_plane_veins = $head_eye = $head_nose = $head_ear = $head_mouth = $head_face = $upper_limb_arm = $upper_limb_forearm = $upper_limb_hand = $upper_limb_axilla = $upper_limb_elbow = $upper_limb_wrist = $upper_limb_fingers = $trunk_chest = $trunk_abdomen = $trunk_back = $lower_limb_thigh = $lower_limb_leg = $lower_limb_foot = $lower_limb_genitalia = $lower_limb_knee = $lower_limb_ankle = $lower_limb_toes = $status = "";
 
 // retrieve data from the post request
 $clinic_no_type = $_POST['clinic_no_type'];
@@ -161,6 +169,28 @@ if (isset($_POST['upper_limb_hand'])) {
 } else {
     $upper_limb_hand = 0;
 }
+if (isset($_POST['upper_limb_axilla'])) {
+    $upper_limb_axilla = $_POST['upper_limb_axilla'];
+} else {
+    $upper_limb_axilla = 0;
+}
+if (isset($_POST['upper_limb_elbow'])) {
+    $upper_limb_elbow = $_POST['upper_limb_elbow'];
+} else {
+    $upper_limb_elbow = 0;
+}
+if (isset($_POST['upper_limb_wrist'])) {
+    $upper_limb_wrist = $_POST['upper_limb_wrist'];
+} else {
+    $upper_limb_wrist = 0;
+}
+if (isset($_POST['upper_limb_fingers'])) {
+    $upper_limb_fingers = $_POST['upper_limb_fingers'];
+} else {
+    $upper_limb_fingers = 0;
+}
+
+
 
 if (isset($_POST['trunk_chest'])) {
     $trunk_chest = $_POST['trunk_chest'];
@@ -193,12 +223,32 @@ if (isset($_POST['lower_limb_foot'])) {
 } else {
     $lower_limb_foot = 0;
 }
+if (isset($_POST['lower_limb_genitalia'])) {
+    $lower_limb_genitalia = $_POST['lower_limb_genitalia'];
+} else {
+    $lower_limb_genitalia = 0;
+}
+if (isset($_POST['lower_limb_knee'])) {
+    $lower_limb_knee = $_POST['lower_limb_knee'];
+} else {
+    $lower_limb_knee = 0;
+}
+if (isset($_POST['lower_limb_ankle'])) {
+    $lower_limb_ankle = $_POST['lower_limb_ankle'];
+} else {
+    $lower_limb_ankle = 0;
+}
+if (isset($_POST['lower_limb_toes'])) {
+    $lower_limb_toes = $_POST['lower_limb_toes'];
+} else {
+    $lower_limb_toes = 0;
+}
 
 $status = "Active";
 
 $sql = "INSERT INTO pre_surgery " .
-    "(clinic_no_type, clinic_no, BHT_no, reason_for_surgery_type, reason_for_surgery, surgery_date, part_of_the_body_head, part_of_the_body_upper_limb, part_of_the_body_trunk, part_of_the_body_lower_limb, side_of_the_body_left, side_of_the_body_right, tissue_plane_skin, tissue_plane_muscle_tendons, tissue_plane_arteries, tissue_plane_veins, tissue_plane_nerves, head_eye, head_nose, head_ear, head_mouth, head_face,upper_limb_arm, upper_limb_forearm, upper_limb_hand, trunk_chest, trunk_abdomen, trunk_back, lower_limb_thigh, lower_limb_leg, lower_limb_foot, status) " .
-    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$reason_for_surgery_type', '$reason_for_surgery', '$surgery_date', $part_of_the_body_head, $part_of_the_body_upper_limb, $part_of_the_body_trunk, $part_of_the_body_lower_limb, $side_of_the_body_left, $side_of_the_body_right, $tissue_plane_skin, $tissue_plane_muscle_tendons, $tissue_plane_arteries, $tissue_plane_veins, $tissue_plane_nerves, $head_eye, $head_nose, $head_ear, $head_mouth, $head_face, $upper_limb_arm, $upper_limb_forearm, $upper_limb_hand, $trunk_chest, $trunk_abdomen, $trunk_back, $lower_limb_thigh, $lower_limb_leg, $lower_limb_foot, '$status');";
+    "(clinic_no_type, clinic_no, BHT_no, reason_for_surgery_type, reason_for_surgery, surgery_date, part_of_the_body_head, part_of_the_body_upper_limb, part_of_the_body_trunk, part_of_the_body_lower_limb, side_of_the_body_left, side_of_the_body_right, tissue_plane_skin, tissue_plane_muscle_tendons, tissue_plane_arteries, tissue_plane_veins, tissue_plane_nerves, head_eye, head_nose, head_ear, head_mouth, head_face,upper_limb_arm, upper_limb_forearm, upper_limb_hand, upper_limb_axilla, upper_limb_elbow, upper_limb_wrist, upper_limb_fingers, trunk_chest, trunk_abdomen, trunk_back, lower_limb_thigh, lower_limb_leg, lower_limb_foot, lower_limb_genitalia, lower_limb_knee, lower_limb_ankle, lower_limb_toes, status) " .
+    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$reason_for_surgery_type', '$reason_for_surgery', '$surgery_date', $part_of_the_body_head, $part_of_the_body_upper_limb, $part_of_the_body_trunk, $part_of_the_body_lower_limb, $side_of_the_body_left, $side_of_the_body_right, $tissue_plane_skin, $tissue_plane_muscle_tendons, $tissue_plane_arteries, $tissue_plane_veins, $tissue_plane_nerves, $head_eye, $head_nose, $head_ear, $head_mouth, $head_face, $upper_limb_arm, $upper_limb_forearm, $upper_limb_hand, $upper_limb_axilla, $upper_limb_elbow, $upper_limb_wrist, $upper_limb_fingers, $trunk_chest, $trunk_abdomen, $trunk_back, $lower_limb_thigh, $lower_limb_leg, $lower_limb_foot, $lower_limb_genitalia, $lower_limb_knee, $lower_limb_ankle, $lower_limb_toes, '$status');";
 if ($conn->query($sql) === TRUE) {
     $alert = "New record created successfully";
 } else {

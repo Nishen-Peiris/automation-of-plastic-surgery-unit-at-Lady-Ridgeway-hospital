@@ -49,7 +49,7 @@
                         Dashboard </a></li>
                 <li><a href="../../surgery/surgery.php">Surgery</a></li>
                 <li class="active"><a href="../../surgery/surgery information/surgeryInformation.php">Surgery</a></li>
-                <li class="font1" class="active">Pre Surgery Information</li>
+                <li class="font1" class="active">Surgery Information</li>
             </ol>
             <h3 align="center">Add
                 Surgery Information

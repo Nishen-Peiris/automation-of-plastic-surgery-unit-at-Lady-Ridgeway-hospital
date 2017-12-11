@@ -28,7 +28,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the pre_surgery relation
-$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, reason_for_surgery_type, reason_for_surgery, surgery_date, part_of_the_body_head, part_of_the_body_upper_limb, part_of_the_body_trunk, part_of_the_body_lower_limb, side_of_the_body_left, side_of_the_body_right, tissue_plane_skin, tissue_plane_muscle_tendons, tissue_plane_arteries, tissue_plane_veins, tissue_plane_nerves, head_eye, head_nose, head_ear, head_mouth, head_face,upper_limb_arm, upper_limb_forearm, upper_limb_hand, trunk_chest, trunk_abdomen, trunk_back, lower_limb_thigh, lower_limb_leg, lower_limb_foot, status FROM pre_surgery LIMIT $offset, $rec_limit";
+$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, reason_for_surgery_type, reason_for_surgery, surgery_date, part_of_the_body_head, part_of_the_body_upper_limb, part_of_the_body_trunk, part_of_the_body_lower_limb, side_of_the_body_left, side_of_the_body_right, tissue_plane_skin, tissue_plane_muscle_tendons, tissue_plane_arteries, tissue_plane_veins, tissue_plane_nerves, head_eye, head_nose, head_ear, head_mouth, head_face,upper_limb_arm, upper_limb_forearm, upper_limb_hand, upper_limb_axilla, upper_limb_elbow, upper_limb_wrist, upper_limb_fingers, trunk_chest, trunk_abdomen, trunk_back, lower_limb_thigh, lower_limb_leg, lower_limb_foot,lower_limb_genitalia, lower_limb_knee, lower_limb_ankle, lower_limb_toes, status FROM pre_surgery LIMIT $offset, $rec_limit";
 $pre_surgery_data = $conn->query($sql);
 ?>
 
@@ -105,9 +105,9 @@ $pre_surgery_data = $conn->query($sql);
                         <th colspan="2">Side of the body</th>
                         <th colspan="5">Tissue plane</th>
                         <th colspan="5">Head</th>
-                        <th colspan="3">Upper Limb</th>
+                        <th colspan="7">Upper Limb</th>
                         <th colspan="3">Trunk</th>
-                        <th colspan="3">Lower Limb</th>
+                        <th colspan="7">Lower Limb</th>
                         <th colspan="5">Operation</th>
                     </tr>
                     <tr>
@@ -135,13 +135,21 @@ $pre_surgery_data = $conn->query($sql);
                         <td>Arm</td>
                         <td>Forearm</td>
                         <td>Hand</td>
+                        <td>Axilla</td>
+                        <td>Elbow</td>
+                        <td>Wrist</td>
+                        <td>Fingers</td>
                         <td>Chest</td>
                         <td>Abdomen</td>
                         <td>Back</td>
                         <td>Thigh</td>
                         <td>Leg</td>
                         <td>Foot</td>
-                        <td></td>
+                        <td>Genitalia</td>
+                        <td>knee</td>
+                        <td>Ankle</td>
+                        <td>Toes</td>
+
                     </tr>
                     <?php
                     // output data of each row
@@ -177,12 +185,20 @@ $pre_surgery_data = $conn->query($sql);
                             <td><?php echo ($row["upper_limb_arm"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["upper_limb_forearm"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["upper_limb_hand"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["upper_limb_axilla"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["upper_limb_elbow"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["upper_limb_wrist"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["upper_limb_fingers"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["trunk_chest"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["trunk_abdomen"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["trunk_back"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["lower_limb_thigh"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["lower_limb_leg"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td><?php echo ($row["lower_limb_foot"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["lower_limb_genitalia"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["lower_limb_knee"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["lower_limb_ankle"] == 1) ? $checked_checkbox : $checkbox; ?></td>
+                            <td><?php echo ($row["lower_limb_toes"] == 1) ? $checked_checkbox : $checkbox; ?></td>
                             <td>
                                 <?php
                                 echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";

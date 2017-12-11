@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
     <script type="text/javascript">
         window.alert("<?php echo $alert; ?>");
-        window.location.href = "../../../module/login/dashboard.php"
+        window.location.href = "../../../module/surgery/post surgery/postSurgeryInformation.php"
     </script>
     <?php
     $conn->close();

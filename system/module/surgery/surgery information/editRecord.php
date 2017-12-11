@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ?>
     <script type="text/javascript">
                 window.alert("<?php echo $alert; ?>");
-                window.location.href = "../../../module/login/dashboard.php"
+                window.location.href = "../../../module/surgery/surgery information/surgeryInformation.php"
     </script>
     <?php
     $conn->close();
@@ -120,9 +120,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         Dashboard </a></li>
                 <li><a href="../../surgery/surgery.php">Surgery</a></li>
                 <li class="active"><a href="../../surgery/surgery information/surgeryInformation.php">Surgery</a></li>
-                <li class="font1" class="active">Pre Surgery Information</li>
+                <li class="font1" class="active">Surgery Information</li>
             </ol>
-            <h3 align="center">Add
+            <h3 align="center">Edit
                 Surgery Information
             </h3>
         </div>
@@ -165,7 +165,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
         </div>
-        <a href="">Surgery calender</a>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">
@@ -275,7 +274,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">
                 <button type="submit" class="btn btn-primary">
-                    <i class="glyphicon glyphicon-save"></i>
+                    <i class="glyphicon glyphicon-edit"></i>
                     Edit
                 </button>
             </div>
