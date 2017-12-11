@@ -62,7 +62,7 @@ xmlhttp.send();
          <li class="font1" class="active">Add Investigation</li>
                     </ol>
                    
-                    <h3 align="center">Add <small class="font1">Investigation</small></h3>
+                    <h3 align="center">Add Investigation</h3>
                     
                 </div>
                 <HR />

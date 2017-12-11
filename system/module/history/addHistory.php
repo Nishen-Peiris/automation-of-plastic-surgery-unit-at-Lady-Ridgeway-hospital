@@ -301,108 +301,106 @@
                     <tr>
                         <td>At Birth</td>
                         <td>BCG
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_BCG" id="immunization_history_BCG"/>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>BCG 2nd dose<br>
                             (If no scar even at 6 months)
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_BCG_2" id="immunization_history_BCG_2"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2">2 months Completed</td>
                         <td>Pentavalent 1
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_penta_1" id="immunization_history_penta_1"/>
                         </td>
 
                     </tr>
                     <tr>
                         <td>OPV1,FIPV
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_OPV_1" id="immunization_history_OPV_1"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="3">4 months Completed</td>
                         <td>Pentavalent 2
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_penta_2" id="immunization_history_penta_2"/>
                         </td>
                     </tr>
                     <tr>
                         <td>OPV 2
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_OPV_2" id="immunization_history_OPV_2"/>
                         </td>
                     </tr>
                     <tr>
                         <td>IPV
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_IPV" id="immunization_history_IPV"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2">6 months Completed</td>
                         <td>Pentavalent 3
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_penta_3" id="immunization_history_penta_3"/>
                         </td>
 
                     </tr>
                     <tr>
                         <td>OPV 3
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_OPV_3" id="immunization_history_OPV_3"/>
                         </td>
                     </tr>
                     <tr>
                         <td>9 months Completed </td>
                         <td>Measles, Mumps, Rubella 1 (MMR 1)
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_MMR_1" id="immunization_history_MMR_1"/>
                         </td>
                     </tr>
                     <tr>
                         <td>12 months Completed</td>
                         <td>Live JE
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_JE" id="immunization_history_JE"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2">18 months Completed</td>
                         <td>DPT
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_DPT" id="immunization_history_DPT"/>
                         </td>
 
                     </tr>
                     <tr>
                         <td>OPV 4
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_OPV_4" id="immunization_history_OPV_4"/>
                         </td>
                     </tr>
                     <tr>
                         <td>3 Years Completed </td>
                         <td>Measles & Rubella (MR)/ MMR 2
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_MMR_2" id="immunization_history_MMR_2"/>
                         </td>
                     </tr>
                     <tr>
                         <td rowspan="2">5 Years Completed</td>
                         <td>D.T
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_DT" id="immunization_history_DT"/>
                         </td>
                     </tr>
                     <tr>
                         <td>OPV 5
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_OPV_5" id="immunization_history_OPV_5"/>
                         </td>
                     </tr>
                     <tr>
                         <td>11 Years Completed</td>
                         <td>Adult Tetanus & diphthria (aTd)
-                            <input type="checkbox" value="1"/>
+                            <input type="checkbox" value="1" name="immunization_history_adult_tetanus" id="immunization_history_adult_tetanus"/>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
-
-
 
         <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
         <div class="row">

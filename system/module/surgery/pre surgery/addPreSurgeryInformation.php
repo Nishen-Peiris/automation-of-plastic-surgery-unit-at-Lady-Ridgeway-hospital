@@ -312,11 +312,11 @@
                 <input type="checkbox" id="head_mouth" name="head_mouth" value="1"/> Mouth
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Axilla
+                <input type="checkbox" id="upper_limb_axilla" name="upper_limb_axilla"  value="1"/> Axilla
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Genitalia
+                <input type="checkbox" id="lower_limb_genitalia" name="lower_limb_genitalia" value="1"/> Genitalia
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
 
@@ -328,11 +328,11 @@
                 <input type="checkbox" id="head_face" name="head_face" value="1"/> Face
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Elbow
+                <input type="checkbox"  value="1" id="upper_limb_elbow" name="upper_limb_elbow"/> Elbow
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Knee
+                <input type="checkbox" id="lower_limb_knee" name="lower_limb_knee" value="1"/> Knee
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
         </div>
@@ -341,11 +341,11 @@
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Wrist
+                <input type="checkbox" id="upper_limb_wrist" name="upper_limb_wrist"  value="1"/> Wrist
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox"  value="1"/> Ankle
+                <input type="checkbox" id="lower_limb_ankle" name="lower_limb_ankle"  value="1"/> Ankle
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             </div>
         </div>
@@ -354,7 +354,7 @@
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="chk1"  value="1"/> Fingers
+                <input type="checkbox" id="chk1" name="upper_limb_fingers"  value="1"/> Fingers
                 <ul id="list1">
                     <li><input type="checkbox"  value="1"/> Thumb</li>
                     <li><input type="checkbox"  value="1"/> Index</li>
@@ -365,7 +365,7 @@
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="chk2"  value="1"/> Toes
+                <input type="checkbox" id="chk2" name="lower_limb_toes" value="1"/> Toes
                 <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
                 <ul id="list2">
                     <li><input type="checkbox"  value="1"/> 1</li>

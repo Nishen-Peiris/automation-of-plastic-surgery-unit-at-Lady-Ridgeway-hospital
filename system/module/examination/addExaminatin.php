@@ -62,13 +62,13 @@ xmlhttp.send();
          <li class="font1" class="active">Add Examination</li>
                     </ol>
                    
-                    <h3 align="center">Add <small class="font1">Examination</small></h3>
+                    <h3 align="center">Add Examination</h3>
                     
                 </div>
                 <HR />
                 <div>
                    <!--Start Table-->
-                   <form name="addteacher" method="post" action="../controller/teachercontroller.php?action=add" 
+                   <form name="addExamination" method="post" action="addExaminationProcess.php"
                          enctype="multipart/form-data">
                     <div class="row">
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -77,23 +77,23 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">
                            
-                           <input name="p_clinic" id="mdcc" type="radio" value="MDCC"/> MDCC
+                           <input name="clinic_no_type" id="mdcc" type="radio" value="MDCC"/> MDCC
                            <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                            <div class="">
-                           <input name="p_clinic" id="psc" type="radio" value="PSC"/> PSC
+                           <input name="clinic_no_type" id="psc" type="radio" value="PSC"/> PSC
                            
                           <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                            </div>
                            
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="p_clincno" id="p_clinicno" placeholder="Clinic NO" class="form-control"/>   
+                        <input name="clinic_no" id="clinic_no" placeholder="Clinic NO" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2"> 
                       BHT NO :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_fname" id="t_fname" placeholder="BHT NO" class="form-control"/>
+                           <input name="BHT_no" id="BHT_no" placeholder="BHT NO" class="form-control"/>
                            
                        </div>
                        </div>
@@ -114,7 +114,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="g_examination" id="g_examination" placeholder="Comment" class="form-control"/>
+                       <input name="general_examination" id="general_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -131,7 +131,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="c_examination" id="c_examination" placeholder="Comment" class="form-control"/>
+                       <input name="cardiovascular_system_examination" id="cardiovascular_system_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -148,7 +148,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="r_examination" id="r_examination" placeholder="Comment" class="form-control"/>
+                       <input name="respiratory_system_examination" id="respiratory_system_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -165,7 +165,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="n_examination" id="n_examination" placeholder="Comment" class="form-control"/>
+                       <input name="nervous_system_examination" id="nervous_system_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -182,7 +182,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="a_examination" id="a_examination" placeholder="Comment" class="form-control"/>
+                       <input name="abdominal_examination" id="abdominal_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -199,7 +199,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="gu_examination" id="gu_examination" placeholder="Comment" class="form-control"/>
+                       <input name="genito_urinary_examination" id="genito_urinary_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -216,7 +216,7 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">
                         
-                       <input name="l_examination" id="l_examination" placeholder="Comment" class="form-control"/>
+                       <input name="limbs_examination" id="limbs_examination" placeholder="Comment" class="form-control"/>
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
