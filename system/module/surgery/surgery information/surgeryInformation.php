@@ -20,7 +20,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the pre_surgery relation
-$sql = "SELECT id, BHT_no, surgery_date, surgery_time, surgery_name, type_of_anesthesia, done_by, designation, assisted_by_1, assisted_by_2, assisted_by_3 FROM surgery LIMIT $offset, $rec_limit";
+$sql = "SELECT id, BHT_no, surgery_date, surgery_time, surgery_name, type_of_anesthesia, done_by, designation, assisted_by_1, assisted_by_2, assisted_by_3, status FROM surgery LIMIT $offset, $rec_limit";
 $surgery_data = $conn->query($sql);
 ?>
 
@@ -123,6 +123,7 @@ $surgery_data = $conn->query($sql);
                                 <td>
                                     <?php
                                     echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                    echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"activateRecord.php?id=$id\">Deactivate</a>";
                                     ?>
                                 </td>
                             </tr>
