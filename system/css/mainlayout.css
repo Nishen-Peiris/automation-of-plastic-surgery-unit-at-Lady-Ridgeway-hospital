@@ -62,7 +62,9 @@ div#footer{
 .table-header{
     background: #79b0b9;
 }
-
+.table-sub-header{
+    background: #b8d2d8;
+}
 .scrolling {
     display: block;
     overflow-x: auto;

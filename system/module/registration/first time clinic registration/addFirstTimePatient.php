@@ -1,4 +1,3 @@
-
 <html>
     <head> 
         <title>Automation of Plastic Surgery Unit at Lady Ridgeway Hospital</title>
@@ -59,17 +58,17 @@ xmlhttp.send();
      <a href="../../login/dashboard.php">               
          Dashboard </a></li>
          <li> <a href="../../registration/registration.php">Registration</a></li>
-         <li class="active"><a href="../../registration/first time clinic registration/fristTimeClincRegistration.php">First Time clinic Registration</a></li>
+         <li class="active"><a href="firstTimeClinicRegistration.php">First Time clinic Registration</a></li>
          <li class="font1" class="active">Add Word Patient</li>
                     </ol>
                    
-                    <h3 align="center">Add <small class="font1">Clinic Patient First Time</small></h3>
+                    <h3 align="center">Add Clinic Patient First Time</h3>
                     
                 </div>
                 <HR />
                 <div>
                    <!--Start Table-->
-                   <form name="addfirsttimepatient" method="post" action="../controller/patientcontroller.php?action=add" 
+                   <form name="addfirsttimepatient" method="post" action="addFirstTimePatientProcess.php"
                          enctype="multipart/form-data">
                    <div class="row">
                        <div class="col-lg-3 col-sm-3 col-md-3">&nbsp; </div>
@@ -79,17 +78,17 @@ xmlhttp.send();
                        </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">
                            
-                           <input name="p_clinic" id="mdcc" type="radio" value="MDCC"/> MDCC
+                           <input name="clinic_no_type" id="clinic_no_type" type="radio" value="MDCC"/> MDCC
                            <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                            <div class="">
-                           <input name="c_clinic" id="psc" type="radio" value="PSC"/> PSC
-                           
+                           <input name="clinic_no_type" id="clinic_no_type" type="radio" value="PSC"/> PSC
+
                           <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                            </div>
                            
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="p_clincno" id="p_clinicno" placeholder="Clinic NO" class="form-control"/>   
+                        <input name="clinic_no" id="clinic_no" placeholder="Clinic NO" class="form-control"/>
                        </div>
                         
                        <div class="col-lg-3 col-sm-3 col-md-3">&nbsp; </div>
@@ -107,7 +106,7 @@ xmlhttp.send();
                        Patient Name :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="p_name" id="p_name" placeholder="Patient Name" class="form-control"/>
+                           <input name="patient_name" id="patient_name" placeholder="Patient Name" class="form-control"/>
                            
                        </div>
                        
@@ -123,7 +122,7 @@ xmlhttp.send();
                        DOB :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="p_dob" id="p_dob" type="date" placeholder="DOB" class="form-control"/>
+                           <input name="DOB" id="DOB" type="date" placeholder="DOB" class="form-control"/>
                            
                        </div>
                        
@@ -145,13 +144,7 @@ xmlhttp.send();
                        <div class="col-lg-1 col-sm-1 col-md-1"> 
                            &nbsp;
                        </div>
-                     <div class="col-lg-2 col-sm-2 col-md-2">
-                         <button type="edit" class="btn btn-primary">
-                               <i class="glyphicon glyphicon-edit"></i>
-                               Edit</button>
-                           
-                       </div>
-                       <div class="col-lg-1col-sm-1 col-md-1"> 
+                             <div class="col-lg-1col-sm-1 col-md-1">
                            &nbsp;
                        </div>
                        <div class="col-lg-2 col-sm-2 col-md-2">

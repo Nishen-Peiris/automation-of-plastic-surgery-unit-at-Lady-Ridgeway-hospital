@@ -28,6 +28,23 @@
 //other_history_family_history_family_diseases
 //other_history_family_history_family_diseases_status
 
+//immunization_history_BCG
+//immunization_history_BCG_2
+//immunization_history_penta_1
+//immunization_history_OPV_1
+//immunization_history_penta_2
+//immunization_history_OPV_2
+//immunization_history_IPV
+//immunization_history_penta_3
+//immunization_history_OPV_3
+// immunization_history_MMR_1
+//immunization_history_JE
+//immunization_history_DPT
+//immunization_history_OPV_4
+//immunization_history_MMR_2
+//immunization_history_DT
+//immunization_history_OPV_5
+//immunization_history_adult_tetanus
 
 
 include_once "../../../system/common/session_handling.php";
@@ -53,27 +70,30 @@ $birth_history_mode_of_delivery = $_POST['birth_history_mode_of_delivery'];
 $birth_history_mode_of_delivery_status = $_POST['birth_history_mode_of_delivery_status'];
 $birth_history_post_natal_complication = $_POST['birth_history_post_natal_complication'];
 
+$other_history_family_history_consanguineous_status = $_POST['other_history_family_history_consanguineous_status'];
+$other_history_family_history_family_diseases_status = $_POST['other_history_family_history_family_diseases_status'];
+
 
 if (isset($_POST['other_history_family_history_consanguineous'])) {
     $other_history_family_history_consanguineous = $_POST['other_history_family_history_consanguineous'];
 } else {
     $other_history_family_history_consanguineous = 0;
 }
-if (isset($_POST['other_history_family_history_consanguineous_status'])) {
-    $other_history_family_history_consanguineous_status = $_POST['other_history_family_history_consanguineous_status'];
-} else {
-    $other_history_family_history_consanguineous_status = 0;
-}
+//if (isset($_POST['other_history_family_history_consanguineous_status'])) {
+//    $other_history_family_history_consanguineous_status = $_POST['other_history_family_history_consanguineous_status'];
+//} else {
+//    $other_history_family_history_consanguineous_status = 0;
+//}
 if (isset($_POST['other_history_family_history_family_diseases'])) {
     $other_history_family_history_family_diseases = $_POST['other_history_family_history_family_diseases'];
 } else {
     $other_history_family_history_family_diseases = 0;
 }
-if (isset($_POST['other_history_family_history_family_diseases_status'])) {
-    $other_history_family_history_family_diseases_status = $_POST['other_history_family_history_family_diseases_status'];
-} else {
-    $other_history_family_history_family_diseases_status = 0;
-}
+//if (isset($_POST['other_history_family_history_family_diseases_status'])) {
+//    $other_history_family_history_family_diseases_status = $_POST['other_history_family_history_family_diseases_status'];
+//} else {
+//    $other_history_family_history_family_diseases_status = 0;
+//}
 
 
 if (isset($_POST['immunization_history_BCG'])) {
@@ -166,7 +186,7 @@ if (isset($_POST['immunization_history_adult_tetanus'])) {
 
 $sql = "INSERT INTO history " .
     "(clinic_no_type, clinic_no, BHT_no, presenting_complain, past_medical_history, past_surgical_history, allergic_history, drug_history, diet_history, birth_history_birth_weight, birth_history_deliver, birth_history_mode_of_delivery, birth_history_mode_of_delivery_status, birth_history_post_natal_complication, other_history_family_history_consanguineous, other_history_family_history_consanguineous_status, other_history_family_history_family_diseases, other_history_family_history_family_diseases_status, immunization_history_BCG, immunization_history_BCG_2, immunization_history_penta_1, immunization_history_OPV_1, immunization_history_penta_2, immunization_history_OPV_2, immunization_history_IPV, immunization_history_penta_3, immunization_history_OPV_3, immunization_history_MMR_1, immunization_history_JE, immunization_history_DPT,immunization_history_OPV_4, immunization_history_MMR_2, immunization_history_DT, immunization_history_OPV_5, immunization_history_adult_tetanus ) " .
-    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$presenting_complain', '$past_medical_history', '$past_surgical_history', '$allergic_history', '$drug_history', '$diet_history', '$birth_history_birth_weight', '$birth_history_deliver', '$birth_history_mode_of_delivery', '$birth_history_mode_of_delivery_status', '$birth_history_post_natal_complication','$other_history_family_history_consanguineous', $other_history_family_history_consanguineous_status, '$other_history_family_history_family_diseases', $other_history_family_history_family_diseases_status, $immunization_history_BCG, $immunization_history_BCG_2, $immunization_history_penta_1, $immunization_history_OPV_1, $immunization_history_penta_2, $immunization_history_OPV_2, $immunization_history_IPV, immunization_history_penta_3, $immunization_history_OPV_3, $immunization_history_MMR_1, $immunization_history_JE, $immunization_history_DPT, $immunization_history_OPV_4, $immunization_history_MMR_2, $immunization_history_DT, $immunization_history_OPV_5, $immunization_history_adult_tetanus );";
+    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$presenting_complain', '$past_medical_history', '$past_surgical_history', '$allergic_history', '$drug_history', '$diet_history', '$birth_history_birth_weight', '$birth_history_deliver', '$birth_history_mode_of_delivery', '$birth_history_mode_of_delivery_status', '$birth_history_post_natal_complication',$other_history_family_history_consanguineous, '$other_history_family_history_consanguineous_status', $other_history_family_history_family_diseases, '$other_history_family_history_family_diseases_status', $immunization_history_BCG, $immunization_history_BCG_2, $immunization_history_penta_1, $immunization_history_OPV_1, $immunization_history_penta_2, $immunization_history_OPV_2, $immunization_history_IPV, $immunization_history_penta_3, $immunization_history_OPV_3, $immunization_history_MMR_1, $immunization_history_JE, $immunization_history_DPT, $immunization_history_OPV_4, $immunization_history_MMR_2, $immunization_history_DT, $immunization_history_OPV_5, $immunization_history_adult_tetanus );";
 if ($conn->query($sql) === TRUE) {
     $alert = "New record created successfully";
 } else {

@@ -128,10 +128,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 Dashboard </a></li>
         <li> <a href="../examination/examination.php">Examination</a></li>
 
-        <li class="font1" class="active">Add Examination</li>
+        <li class="font1" class="active">Edit Examination</li>
     </ol>
 
-    <h3 align="center">Add Examination</h3>
+    <h3 align="center">Edit Examination</h3>
 
 </div>
 <HR />

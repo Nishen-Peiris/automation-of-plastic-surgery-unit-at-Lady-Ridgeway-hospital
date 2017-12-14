@@ -65,7 +65,7 @@ if(!isset($_SESSION)){
                    <div class="col-lg-2 col-md-2 col-sm-2">
                      
                    <p class="ali">
-                       <a  class="font" href="first time clinic registration/fristTimeClincRegistration.php">
+                       <a  class="font" href="first time clinic registration/firstTimeClinicRegistration.php">
                            <img src="../../images/fristtimeregistration.png" 
                             width="75" height="75" />
                        <br />

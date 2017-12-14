@@ -258,10 +258,11 @@
                        value="1"/> Consanguineous <br/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
+
                 <input name="other_history_family_history_consanguineous_status"
-                       id="other_history_family_history_consanguineous_status" type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
+                       id="other_history_family_history_consanguineous_status" type="radio" value="Yes"/> YES &nbsp;&nbsp;&nbsp;
                 <input name="other_history_family_history_consanguineous_status"
-                       id="other_history_family_history_consanguineous_status" type="radio" value="0"
+                       id="other_history_family_history_consanguineous_status" type="radio" value="No"
                        checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
@@ -271,9 +272,9 @@
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 <input name="other_history_family_history_family_diseases_status"
-                       id="other_history_family_history_family_diseases_status" type="radio" value="1"/> YES &nbsp;&nbsp;&nbsp;
+                       id="other_history_family_history_family_diseases_status" type="radio" value="Yes"/> YES &nbsp;&nbsp;&nbsp;
                 <input name="other_history_family_history_family_diseases_status"
-                       id="other_history_family_history_family_diseases_status" type="radio" value="0"
+                       id="other_history_family_history_family_diseases_status" type="radio" value="No"
                        checked="checked"/> NO &nbsp;&nbsp;&nbsp; <br/>
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>

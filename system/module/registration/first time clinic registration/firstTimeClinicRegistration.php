@@ -15,56 +15,57 @@ if (isset($_GET{'page'})) {
 }
 
 /* Get total number of records */
-$sql_to_count_the_total_number_of_records = "SELECT id FROM examination";
+$sql_to_count_the_total_number_of_records = "SELECT id FROM first_time_clinic_registration";
 $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
-// load data from the examination relation
-$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, general_examination, cardiovascular_system_examination, respiratory_system_examination, nervous_system_examination, abdominal_examination, genito_urinary_examination, limbs_examination FROM examination LIMIT $offset, $rec_limit";
-$examination_data = $conn->query($sql);
+// load data from the word registration relation
+$sql = "SELECT id,clinic_no, clinic_no_type, patient_name, DOB  FROM first_time_clinic_registration LIMIT $offset, $rec_limit";
+$first_time_reg_data = $conn->query($sql);
 ?>
 <html>
-    <head> 
+    <head>
         <title>Automation of Plastic Surgery Unit at Lady Ridgeway Hospital</title>
-        <link rel="icon" href="../../images/title.png" />
+        <link rel="icon" href="../../../images/title.png" />
         <link rel="stylesheet" type="text/css" 
-              href="../../bootstrap/css/bootstrap.min.css" />
+              href="../../../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" 
-          href="../../css/mainlayout.css" />
+          href="../../../css/mainlayout.css" />
      
-    <script type="text/javascript" src="../../js/jquery-1.8.3.min.js">
-     
+    <script type="text/javascript" src="../../../js/jquery-1.8.3.min.js">
+
     </script>   
-    
+
     </head>
     <body>
         <div id="main">
             <div id="header">
-               <?php include '../../common/header.php'; ?>      
+               <?php include '../../../common/header.php'; ?>      
         </div>
       
             <div id="navi">
-                <?php include '../../common/navi.php'; ?>
+                <?php include '../../../common/navi.php'; ?>
                 
                 &nbsp;</div>
             <div id="contents">
                 <div>
                     <ol class="breadcrumb">
                                 <li>
-     <a href="../login/dashboard.php">
+     <a href="../../login/dashboard.php">
          Dashboard </a></li>
-         <li> <a href="../examination/examination.php">Examination</a></li>
-         
+         <li> <a href="../../registration/registration.php">Registration</a></li>
+         <li class="active"><font color ="#096dac" >First Time Clinic Registration </font></li>
                     </ol> 
-    <h3 align="center">Examination</h3>
+    <h3 align="center">First Time Clinic Registration</h3>
                     
                 </div>
                 <HR />
+
                 <div class="table-sec" style="padding: 0 20px;">
                     <!-------------------- Add and search -------------------->
                     <div class="row" style="padding-left: 20px">
                         <div class="col-lg-6 col-sm-6 col-md-6">
-                            <a href="addExaminatin.php">
+                            <a href="addWordPatient.php">
                                 <button class="btn btn-primary"
                                         type="button">
                                     <i class="glyphicon glyphicon-plus"></i>
@@ -88,41 +89,29 @@ $examination_data = $conn->query($sql);
                             </form>
                         </div>
                     </div>
-                    <!-------------------- Table to show the list of examinations -------------------->
+                    <!-------------------- Table to show the list of first time patient registration -------------------->
                     <?php
-                    if ($examination_data->num_rows > 0) {
+                    if ($first_time_reg_data->num_rows > 0) {
                         ?>
                         <!-- display field headings -->
                         <table border="1" class="table mytable">
                             <tr class="table-header">
-                                <th>Clinic no.</th>
+                                <th>Clinic No.</th>
                                 <th>Clinic Type</th>
-                                <th>BHT no.</th>
-                                <th>General Examination</th>
-                                <th>Cardiovascular System Examination</th>
-                                <th>Respiratory System Examination</th>
-                                <th>Nervous System Examination</th>
-                                <th>Abdominal Examination</th>
-                                <th>Genito Urinary Examination </th>
-                                <th>Limbs Examination</th>
+                                <th>Patient Name</th>
+                                <th>DOB</th>
                                 <th>Operation</th>
                             </tr>
                             <?php
                             // output data of each row
-                            while ($row = $examination_data->fetch_assoc()) {
+                            while ($row = $first_time_reg_data->fetch_assoc()) {
                                 $id = $row["id"];
                                 ?>
                                 <tr>
                                     <td><?php echo $row["clinic_no"]; ?></td>
                                     <td><?php echo $row["clinic_no_type"]; ?></td>
-                                    <td><?php echo $row["BHT_no"]; ?></td>
-                                    <td><?php echo $row["general_examination"]; ?></td>
-                                    <td><?php echo $row["cardiovascular_system_examination"]; ?></td>
-                                    <td><?php echo $row["respiratory_system_examination"]; ?></td>
-                                    <td><?php echo $row["nervous_system_examination"]; ?></td>
-                                    <td><?php echo $row["abdominal_examination"]; ?></td>
-                                    <td><?php echo $row["genito_urinary_examination"]; ?></td>
-                                    <td><?php echo $row["limbs_examination"]; ?></td>
+                                    <td><?php echo $row["patient_name"]; ?></td>
+                                    <td><?php echo $row["DOB"]; ?></td>
                                     <td>
                                         <?php
                                         echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
@@ -134,7 +123,7 @@ $examination_data = $conn->query($sql);
                             ?>
                         </table>
                         <?php
-                        $_PHP_SELF = "examination.php";
+                        $_PHP_SELF = "wordRegistration.php";
                         $total_pages = ceil($rec_count / $rec_limit);
                         for ($i = 1; $i <= $total_pages; $i++) {
                             echo "<a href = \"$_PHP_SELF?page=$i\">$i</a>";
@@ -145,17 +134,16 @@ $examination_data = $conn->query($sql);
                     ?>
                 </div>
 
-                    
-                
-            </div>     
-            <div id="footer">
-                
-               <?php include '../../common/footer.php'; ?> 
-            </div>            
-        </div>
-        
-    </body>
-    
-</html>
 
+
+            </div>
+            <div id="footer">
+
+                <?php include '../../../common/footer.php'; ?>
+            </div>
+        </div>
+
+    </body>
+
+</html>
 
