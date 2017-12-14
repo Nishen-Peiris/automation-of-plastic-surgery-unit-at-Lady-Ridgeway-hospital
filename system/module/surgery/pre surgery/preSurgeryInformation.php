@@ -202,7 +202,7 @@ $pre_surgery_data = $conn->query($sql);
                             <td>
                                 <?php
                                 echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
-                                echo ($row["status"] == "Active") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"deactivateRecord.php?id=$id\">Deactivate</a>";
+                                echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"activateRecord.php?id=$id\">Deactivate</a>";
                                 ?>
                             </td>
                         </tr>
