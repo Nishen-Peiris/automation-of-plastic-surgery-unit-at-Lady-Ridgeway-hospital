@@ -65,7 +65,7 @@ $first_time_reg_data = $conn->query($sql);
                     <!-------------------- Add and search -------------------->
                     <div class="row" style="padding-left: 20px">
                         <div class="col-lg-6 col-sm-6 col-md-6">
-                            <a href="addWordPatient.php">
+                            <a href="addFirstTimePatient.php">
                                 <button class="btn btn-primary"
                                         type="button">
                                     <i class="glyphicon glyphicon-plus"></i>
