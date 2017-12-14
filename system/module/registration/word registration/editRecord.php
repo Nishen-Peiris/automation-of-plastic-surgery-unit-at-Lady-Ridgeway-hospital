@@ -244,8 +244,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
                         <button type="submit" class="btn btn-primary">
-                            <i class="glyphicon glyphicon-save"></i>
-                            Save</button>
+                            <i class="glyphicon glyphicon-edit"></i>
+                            Edit</button>
                     </div>
 
                     <div class="col-lg-2 col-sm-2 col-md-2">

@@ -119,9 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         Registration</a></li>
                 <li class="font1" class="active">Edit Clinic Patient</li>
             </ol>
-            <h3 align="center">Edit
-                <small class="font1">Clinic Patient Permanently</small>
-            </h3>
+            <h3 align="center">Edit Clinic Patient Permanently</h3>
         </div>
         <HR/>
         <div>
