@@ -1,5 +1,3 @@
-
-
 <html>
     <head> 
         <title>Automation of Plastic Surgery Unit at Lady Ridgeway Hospital</title>
@@ -64,13 +62,13 @@ xmlhttp.send();
          <li class="font1" class="active">Add Word Patient</li>
                     </ol>
                    
-                    <h3 align="center">Add <small class="font1">Word Patient</small></h3>
+                    <h3 align="center">Add Word Patient</h3>
                     
                 </div>
                 <HR />
                 <div>
                    <!--Start Table-->
-                   <form name="addteacher" method="post" action="../controller/teachercontroller.php?action=add" 
+                   <form name="wordRegistration" method="post" action="addWordProcess.php"
                          enctype="multipart/form-data">
                    <div class="row">
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
@@ -78,7 +76,7 @@ xmlhttp.send();
                       BHT NO :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_fname" id="t_fname" placeholder="BHT NO" class="form-control"/>
+                           <input name="BHT_no" id="BHT_no" placeholder="BHT NO" class="form-control"/>
                            
                        </div>
                      
@@ -86,7 +84,7 @@ xmlhttp.send();
                        Patient Name :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_lname" id="t_lname" placeholder="Patient Name" class="form-control"/>
+                           <input name="patient_name" id="patient_name" placeholder="Patient Name" class="form-control"/>
                            
                        </div>
                        
@@ -105,7 +103,7 @@ xmlhttp.send();
                        DOB :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_dob" id="t_dob" type="date" placeholder="DOB" class="form-control"/>
+                           <input name="DOB" id="DOB" type="date" placeholder="DOB" class="form-control"/>
                            
                        </div>
                      
@@ -113,7 +111,7 @@ xmlhttp.send();
                       Age :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_nic" id="t_nic" placeholder="Age" class="form-control"/>
+                           <input name="age" id="age" placeholder="Age" class="form-control"/>
                            
                        </div>
                        
@@ -131,7 +129,7 @@ xmlhttp.send();
                        Telephone No :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_telno" id="t_telno" placeholder="Telephone No" class="form-control"/>
+                           <input name="tp_number" id="tp_number" placeholder="Telephone No" class="form-control"/>
                            
                        </div>
                      
@@ -139,8 +137,8 @@ xmlhttp.send();
                       Gender :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_gender" id="male" type="radio" value="male"/> Male
-                           <input name="t_gender" id="female" type="radio" value="female"/>Female
+                           <input name="gender" id="gender" type="radio" value="male"/> Male
+                           <input name="gender" id="gender" type="radio" value="female"/>Female
                            
                        </div>
                        
@@ -158,7 +156,7 @@ xmlhttp.send();
                        Address :
                        </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="t_address" id="t_address" placeholder="Address" class="form-control"/>
+                           <input name="address" id="address" placeholder="Address" class="form-control"/>
                            
                        </div>
                      
