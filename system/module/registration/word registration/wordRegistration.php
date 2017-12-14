@@ -20,7 +20,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the word registration relation
-$sql = "SELECT id, BHT_no, patient_name, DOB, age, tp_number, gender, address FROM word_registration LIMIT $offset, $rec_limit";
+$sql = "SELECT id, BHT_no, word_number, patient_name, DOB, age, tp_number, gender, address FROM word_registration LIMIT $offset, $rec_limit";
 $word_reg_data = $conn->query($sql);
 ?>
 <html>
@@ -96,6 +96,7 @@ $word_reg_data = $conn->query($sql);
                         <table border="1" class="table mytable">
                             <tr class="table-header">
                                 <th>BHT no.</th>
+                                <th>Word no.</th>
                                 <th>Patient Name</th>
                                 <th>DOB</th>
                                 <th>Age</th>
@@ -111,6 +112,7 @@ $word_reg_data = $conn->query($sql);
                                 ?>
                                 <tr>
                                     <td><?php echo $row["BHT_no"]; ?></td>
+                                    <td><?php echo $row["word_number"]; ?></td>
                                     <td><?php echo $row["patient_name"]; ?></td>
                                     <td><?php echo $row["DOB"]; ?></td>
                                     <td><?php echo $row["age"]; ?></td>

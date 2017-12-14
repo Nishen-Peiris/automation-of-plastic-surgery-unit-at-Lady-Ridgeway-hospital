@@ -11,6 +11,7 @@ include_once "../../../../system/common/dbconnection_inc.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // get data from post
     $id = $_POST{'id'};
+    $word_number = $_POST{'word_number'};
     $BHT_no = $_POST['BHT_no'];
     $patient_name = $_POST['patient_name'];
     $DOB = $_POST['DOB'];
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address = $_POST['address'];
 
 
-    $sql = "UPDATE word_registration set BHT_no = '$BHT_no', patient_name = '$patient_name', DOB = '$DOB', age = '$age', tp_number = '$tp_number', gender = '$gender', address = '$address' WHERE id = '$id'";
+    $sql = "UPDATE word_registration set BHT_no = '$BHT_no', word_number = '$word_number', patient_name = '$patient_name', DOB = '$DOB', age = '$age', tp_number = '$tp_number', gender = '$gender', address = '$address' WHERE id = '$id'";
     if ($conn->query($sql) == TRUE) {
         $alert = "Record updated.";
     } else {
@@ -42,12 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // get the record to be edited
-    $sql = "SELECT BHT_no, patient_name, DOB, age, tp_number, gender, address from word_registration WHERE id = '$id'";
+    $sql = "SELECT BHT_no, word_number, patient_name, DOB, age, tp_number, gender, address from word_registration WHERE id = '$id'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $BHT_no = $row['BHT_no'];
+        $word_number = $row['word_number'];
         $patient_name = $row['patient_name'];
         $DOB = $row['DOB'];
         $age = $row['age'];
@@ -225,9 +227,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     </div>
 
-                    <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
-                    <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
-                    <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
+                    <div class="col-lg-2 col-sm-2 col-md-2">Word Number: </div>
+                    <div class="col-lg-3 col-sm-3 col-md-3">
+                        <input name="word_number" id="word_number"  value="<?php echo $word_number; ?>" placeholder="Word Number" class="form-control"/>
+                    </div>
                 </div>
 
 

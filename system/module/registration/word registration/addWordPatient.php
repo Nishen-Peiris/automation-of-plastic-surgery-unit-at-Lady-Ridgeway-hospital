@@ -79,33 +79,27 @@ xmlhttp.send();
                            <input name="BHT_no" id="BHT_no" placeholder="BHT NO" class="form-control"/>
                            
                        </div>
-                     
-                       <div class="col-lg-2 col-sm-2 col-md-2"> 
-                       Patient Name :
-                       </div>
+                       <div class="col-lg-2 col-sm-2 col-md-2">Word Number: </div>
                        <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="patient_name" id="patient_name" placeholder="Patient Name" class="form-control"/>
-                           
+                           <input name="word_number" id="word_number" placeholder="Word Number" class="form-control"/>
                        </div>
-                       
+
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
-                       
-                       
-                       
-                       
+
                    </div>
                        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                       
                        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                          <div class="row">
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
-                       <div class="col-lg-2 col-sm-2 col-md-2"> 
-                       DOB :
-                       </div>
-                       <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="DOB" id="DOB" type="date" placeholder="DOB" class="form-control"/>
-                           
-                       </div>
+
+                             <div class="col-lg-2 col-sm-2 col-md-2">
+                                 Patient Name :
+                             </div>
+                             <div class="col-lg-3 col-sm-3 col-md-3">
+                                 <input name="patient_name" id="patient_name" placeholder="Patient Name" class="form-control"/>
+
+                             </div>
                      
                        <div class="col-lg-2 col-sm-2 col-md-2"> 
                       Age :
@@ -125,13 +119,14 @@ xmlhttp.send();
                        <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                          <div class="row">
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
-                       <div class="col-lg-2 col-sm-2 col-md-2"> 
-                       Telephone No :
-                       </div>
-                       <div class="col-lg-3 col-sm-3 col-md-3">
-                           <input name="tp_number" id="tp_number" placeholder="Telephone No" class="form-control"/>
-                           
-                       </div>
+                             <div class="col-lg-2 col-sm-2 col-md-2">
+                                 DOB :
+                             </div>
+                             <div class="col-lg-3 col-sm-3 col-md-3">
+                                 <input name="DOB" id="DOB" type="date" placeholder="DOB" class="form-control"/>
+
+                             </div>
+
                      
                        <div class="col-lg-2 col-sm-2 col-md-2"> 
                       Gender :
@@ -143,10 +138,7 @@ xmlhttp.send();
                        </div>
                        
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
-                       
-                       
-                       
-                       
+
                    </div>
                            <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                            <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
@@ -159,12 +151,18 @@ xmlhttp.send();
                            <input name="address" id="address" placeholder="Address" class="form-control"/>
                            
                        </div>
-                     
-                       <div class="col-lg-2 col-sm-2 col-md-2">&nbsp; </div>
-                       <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
+
+                             <div class="col-lg-2 col-sm-2 col-md-2">
+                                 Telephone No :
+                             </div>
+                             <div class="col-lg-3 col-sm-3 col-md-3">
+                                 <input name="tp_number" id="tp_number" placeholder="Telephone No" class="form-control"/>
+
+                             </div>
+                         </div>
                        <div class="col-lg-1 col-sm-1 col-md-1">&nbsp; </div>
                          </div>
-                           
+
                     
                            <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                             <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>

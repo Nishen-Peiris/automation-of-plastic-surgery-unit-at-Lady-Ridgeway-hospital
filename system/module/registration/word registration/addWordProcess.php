@@ -8,6 +8,7 @@
 /******************** All the field names of the Word Registration Relation **************************/
 //id
 //BHT_no
+//word_number
 //patient_name
 //DOB
 //age
@@ -19,10 +20,11 @@ include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 
 // initialize all the variables
-$id=$BHT_no=$patient_name=$DOB=$age=$tp_number=$gender=$address= "";
+$id=$BHT_no=$word_number=$patient_name=$DOB=$age=$tp_number=$gender=$address= "";
 
 // retrieve data from the post request
 $BHT_no = $_POST['BHT_no'];
+$word_number = $_POST['word_number'];
 $patient_name = $_POST['patient_name'];
 $DOB = $_POST['DOB'];
 $age = $_POST['age'];
@@ -32,8 +34,8 @@ $address = $_POST['address'];
 
 
 $sql = "INSERT INTO word_registration " .
-    "(BHT_no, patient_name,DOB, age, tp_number, gender, address) " .
-    "VALUES ('$BHT_no', '$patient_name', '$DOB', '$age', '$tp_number', '$gender', '$address');";
+    "(BHT_no, word_number, patient_name, DOB, age, tp_number, gender, address) " .
+    "VALUES ('$BHT_no', '$word_number', '$patient_name', '$DOB', '$age', '$tp_number', '$gender', '$address');";
 if ($conn->query($sql) === TRUE) {
     $alert = "New record created successfully";
 } else {
