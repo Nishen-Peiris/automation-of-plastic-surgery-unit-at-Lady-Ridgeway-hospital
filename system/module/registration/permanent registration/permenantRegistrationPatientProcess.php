@@ -37,14 +37,6 @@ $referred_by_hospital = $_POST['referred_by_hospital'];
 $hospital_district = $_POST['hospital_district'];
 $referred_by_person = $_POST['referred_by_person'];
 
-echo $referred_by_hospital;
-echo "<br/>";
-echo $referred_by_person;
-echo "<br/>";
-echo $_POST['referred_by_hospital'];
-echo "<br/>";
-echo $_POST['referred_by_person'];
-
 $sql = "INSERT INTO permanent_registration " .
     "(clinic_no_type, clinic_no, first_contact_date, patient_name, DoB, address, gender, referred_by_hospital, hospital_district, referred_by_person) " .
     "VALUES ('$clinic_no_type', '$clinic_no', '$first_contact_date', '$patient_name', '$DoB', '$address', '$gender', '$referred_by_hospital', '$hospital_district', '$referred_by_person');";
