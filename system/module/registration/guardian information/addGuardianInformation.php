@@ -121,7 +121,7 @@
                         Age :
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="age" id="age" placeholder="Age" readonly="readonly" class="form-control"/>
+                        <input name="age" id="age" placeholder="Age" class="form-control"/>
                     </div>
                     <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
                 </div>
@@ -182,3 +182,17 @@
 </div>
 </body>
 </html>
+
+<!--calculate age given the date of birth-->
+<script type="text/javascript">
+    function getAge(DoB) {
+        var today = new Date();
+        var birthDate = new Date(DoB);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        document.getElementById("age").value = age + " yrs";
+    }
+</script>

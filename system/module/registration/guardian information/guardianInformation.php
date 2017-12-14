@@ -17,7 +17,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the pre_surgery relation
-$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, guardian_name, address, gender, contact_no, occupation FROM guardian_information LIMIT $offset, $rec_limit";
+$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, guardian_name, address, gender, age, contact_no, occupation FROM guardian_information LIMIT $offset, $rec_limit";
 $guardian_information = $conn->query($sql);
 ?>
 
@@ -90,6 +90,7 @@ $guardian_information = $conn->query($sql);
                             <th>Guardian name</th>
                             <th>Address</th>
                             <th>Gender</th>
+                            <th>Age</th>
                             <th>Contact no.</th>
                             <th>Occupation</th>
                             <th>Operation</th>
@@ -107,6 +108,7 @@ $guardian_information = $conn->query($sql);
                                 <td><?php echo $row["guardian_name"]; ?></td>
                                 <td><?php echo $row["address"]; ?></td>
                                 <td><?php echo $row["gender"]; ?></td>
+                                <td><?php echo $row["age"]; ?></td>
                                 <td><?php echo $row["contact_no"]; ?></td>
                                 <td><?php echo $row["occupation"]; ?></td>
                                 <td>

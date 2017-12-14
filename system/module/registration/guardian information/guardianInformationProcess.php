@@ -21,7 +21,7 @@ include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 
 // initialize all the variables
-$id = $clinic_no_type = $clinic_no = $BHT_no = $guardian_name = $address = $gender = $contact_no = $occupation = "";
+$id = $clinic_no_type = $clinic_no = $BHT_no = $guardian_name = $address = $gender = $contact_no = $occupation = $age = "";
 
 // retrieve data from the post request
 $clinic_no_type = $_POST['clinic_no_type'];
@@ -32,10 +32,11 @@ $address = $_POST['address'];
 $gender = $_POST['gender'];
 $contact_no = $_POST['contact_no'];
 $occupation = $_POST['occupation'];
+$age = $_POST['age'];
 
 $sql = "INSERT INTO guardian_information " .
-    "(clinic_no_type, clinic_no, BHT_no, guardian_name, address, gender, contact_no, occupation) " .
-    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$guardian_name', '$address', '$gender', '$contact_no', '$occupation');";
+    "(clinic_no_type, clinic_no, BHT_no, guardian_name, address, gender, contact_no, occupation, age) " .
+    "VALUES ('$clinic_no_type', '$clinic_no', '$BHT_no', '$guardian_name', '$address', '$gender', '$contact_no', '$occupation', $age);";
 if ($conn->query($sql) === TRUE) {
     $alert = "New record created successfully";
 } else {

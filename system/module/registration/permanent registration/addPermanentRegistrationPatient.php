@@ -108,7 +108,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
                         <input name="DoB" id="DoB" type="date" placeholder="DOB" required="required"
-                               class="form-control"/>
+                               class="form-control" onchange="getAge(this.value)"/>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-md-2">
                         Age :
@@ -145,7 +145,8 @@
                         Reffered By Hospital :
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="referred_by_hospital" id="referred_by_hospital" type="text" placeholder="Reffered By Hospital"
+                        <input name="referred_by_hospital" id="referred_by_hospital" type="text"
+                               placeholder="Reffered By Hospital"
                                class="form-control"/>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-md-2">
@@ -165,7 +166,8 @@
                         Reffered By Person :
                     </div>
                     <div class="col-lg-3 col-sm-3 col-md-3">
-                        <input name="referred_by_person" id="referred_by_person" type="text" placeholder="Reffered By Person"
+                        <input name="referred_by_person" id="referred_by_person" type="text"
+                               placeholder="Reffered By Person"
                                class="form-control"/>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-md-2">&nbsp;</div>
@@ -208,4 +210,16 @@
 </body>
 </html>
 
-
+<!--calculate age given the date of birth-->
+<script type="text/javascript">
+    function getAge(DoB) {
+        var today = new Date();
+        var birthDate = new Date(DoB);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        document.getElementById("age").value = age + " yrs";
+    }
+</script>
