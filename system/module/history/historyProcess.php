@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: root
- * Date: 12/3/17
- * Time: 1:47 PM
- */
+
 /******************** All the field names of the history relation **************************/
 //id
 //clinic_no_type
@@ -79,21 +74,13 @@ if (isset($_POST['other_history_family_history_consanguineous'])) {
 } else {
     $other_history_family_history_consanguineous = 0;
 }
-//if (isset($_POST['other_history_family_history_consanguineous_status'])) {
-//    $other_history_family_history_consanguineous_status = $_POST['other_history_family_history_consanguineous_status'];
-//} else {
-//    $other_history_family_history_consanguineous_status = 0;
-//}
+
 if (isset($_POST['other_history_family_history_family_diseases'])) {
     $other_history_family_history_family_diseases = $_POST['other_history_family_history_family_diseases'];
 } else {
     $other_history_family_history_family_diseases = 0;
 }
-//if (isset($_POST['other_history_family_history_family_diseases_status'])) {
-//    $other_history_family_history_family_diseases_status = $_POST['other_history_family_history_family_diseases_status'];
-//} else {
-//    $other_history_family_history_family_diseases_status = 0;
-//}
+
 
 
 if (isset($_POST['immunization_history_BCG'])) {

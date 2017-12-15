@@ -118,14 +118,15 @@
                 <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                 <div class="">
                     <input id="reason_for_surgery_type" type="radio" name="reason_for_surgery_type" value="Acquired"/>Acquired
+                    <div class="col-lg-3 col-sm-3 col-md-3">
+                        <select id="reason_for_surgery" name="reason_for_surgery" class="btn dropdown-toggle">
+                            <option value="Primary" selected="selected"> Primary</option>
+                            <option value="Secondary"> Secondary</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-3 col-md-3">
-                <select id="reason_for_surgery" name="reason_for_surgery" class="btn dropdown-toggle">
-                    <option value="Primary" selected="selected"> Primary</option>
-                    <option value="Secondary"> Secondary</option>
-                </select>
-            </div>
+            <div class="col-lg-3 col-sm-3 col-md-3"></div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 Surgery Date :
             </div>
@@ -163,7 +164,7 @@
         <div class="row">
             <div class="col-lg-3 col-sm-3 col-md-3">&nbsp;</div>
             <div class="col-lg-2 col-sm-2 col-md-2">
-                <input type="checkbox" id="part_of_the_body_head" name="part_of_the_body_head" value="1"/> Head
+                    <input type="checkbox" id="part_of_the_body_head" name="part_of_the_body_head" value="1"/> Head
             </div>
             <div class="col-lg-2 col-sm-2 col-md-2">
                 <input type="checkbox" id="side_of_the_body_left" name="side_of_the_body_left" value="1"/> Left
