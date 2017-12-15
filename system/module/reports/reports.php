@@ -77,6 +77,11 @@
                 <input type="number" id="year" name="year" min="1950" max="2099" step="1" value="2017"/> |
                 <button type="button" onclick="executeQuery2()">Show</button>
             </form>
+            <form name="form3">
+                Permanently registered patients in the month
+                <input type="month" id="month" name="month"/> |
+                <button type="button" onclick="executeQuery3()">Show</button>
+            </form>
             <!-- Display filter result in the below div -->
             <div id="results">
             </div>
@@ -110,7 +115,7 @@
         xmlhttp.send();
     }
 
-    // Function: filter permanently registered patients by district
+    // Function: filter permanently registered patients by year
     function executeQuery2() {
         var year = document.form2.year.value;
 
@@ -127,6 +132,26 @@
             }
         };
         xmlhttp.open("GET", "queries/2.php?year=" + year, true);
+        xmlhttp.send();
+    }
+
+    // Function: filter permanently registered patients by month
+    function executeQuery3() {
+        var month = document.form3.month.value;
+
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("results").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "queries/3.php?month=" + month, true);
         xmlhttp.send();
     }
 </script>
