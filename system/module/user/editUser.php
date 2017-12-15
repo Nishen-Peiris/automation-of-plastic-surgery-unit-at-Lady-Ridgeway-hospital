@@ -1,32 +1,101 @@
 <?php
+//
+////To start the session and if not login to the system, redirect to the index page
+//include("../../common/session_handling.php");
+//
+//$user_id=$_REQUEST['user_id'];
+//
+////data con
+//require_once("../../common/dbconnection_inc.php");
+//$sqluser="SELECT * FROM user u, user_role ur,login l WHERE u.user_role_id=ur.user_role_id AND l.user_id=u.user_id AND u.user_id='$user_id'";
+//$resultuser=mysqli_query($conn,$sqluser);
+//$rowuser=mysqli_fetch_assoc($resultuser);
+//$sqltitle="SELECT * FROM user u, user_title ut,login l WHERE u.user_title_id=ut.user_title_id AND l.user_id=u.user_id AND u.user_id='$user_id'";
+//$resulttitle=mysqli_query($conn,$sqltitle);
+//$rowtitle=mysqli_fetch_assoc($resulttitle);
+////To start the session
+//if(!isset($_SESSION)){
+//	session_start();
+//}
+//$role_id=$_SESSION['psc_user_role_id'];
+//
+////data con
+//require_once("../../common/dbconnection_inc.php");
+//$sql="SELECT * FROM user_role";
+//$result=mysqli_query($conn,$sql);
+//$sql="SELECT * FROM user_title";
+//$result1=mysqli_query($conn,$sql);
+//?><!-- -->
+<!---->
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ChaThUrikA
+ * Date: 12/11/2017
+ * Time: 7:56 PM
+ */
+include_once "../../../../system/common/session_handling.php";
+include_once "../../../../system/common/dbconnection_inc.php";
 
-//To start the session and if not login to the system, redirect to the index page 
-include("../../common/session_handling.php");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // get data from post
+    $id = $_POST{'id'};
+    $clinic_no_type = $_POST['clinic_no_type'];
+    $clinic_no = $_POST['clinic_no'];
+    $BHT_no = $_POST['BHT_no'];
+    $general_examination = $_POST['general_examination'];
+    $cardiovascular_system_examination = $_POST['cardiovascular_system_examination'];
+    $respiratory_system_examination = $_POST['respiratory_system_examination'];
+    $nervous_system_examination = $_POST['nervous_system_examination'];
+    $abdominal_examination = $_POST['abdominal_examination'];
+    $genito_urinary_examination = $_POST['genito_urinary_examination'];
+    $limbs_examination = $_POST['limbs_examination'];
 
-$user_id=$_REQUEST['user_id'];
+    $sql = "UPDATE examination set clinic_no_type = '$clinic_no_type', clinic_no = '$clinic_no', BHT_no = '$BHT_no', general_examination = '$general_examination', cardiovascular_system_examination = '$cardiovascular_system_examination', respiratory_system_examination = '$respiratory_system_examination', nervous_system_examination = '$nervous_system_examination', abdominal_examination = '$abdominal_examination', genito_urinary_examination = '$genito_urinary_examination', limbs_examination = '$limbs_examination' WHERE id = '$id'";
+    if ($conn->query($sql) == TRUE) {
+        $alert = "Record updated.";
+    } else {
+        $alert = "An error occurred while updating the record.";
+    }
+    ?>
+    <script type="text/javascript">
+        window.alert("<?php echo $alert; ?>");
+        window.location.href = "examination.php"
+    </script>
+    <?php
+    $conn->close();
+} else {
+    // get the id of the record to be edited
+    if (isset($_GET{'id'})) {
+        $id = $_GET{'id'};
+    } else {
+        die();
+    }
 
-//data con
-require_once("../../common/dbconnection_inc.php"); 
-$sqluser="SELECT * FROM user u, user_role ur,login l WHERE u.user_role_id=ur.user_role_id AND l.user_id=u.user_id AND u.user_id='$user_id'";
-$resultuser=mysqli_query($conn,$sqluser);
-$rowuser=mysqli_fetch_assoc($resultuser);
-$sqltitle="SELECT * FROM user u, user_title ut,login l WHERE u.user_title_id=ut.user_title_id AND l.user_id=u.user_id AND u.user_id='$user_id'";
-$resulttitle=mysqli_query($conn,$sqltitle);
-$rowtitle=mysqli_fetch_assoc($resulttitle);
-//To start the session
-if(!isset($_SESSION)){
-	session_start();	
+    // get the record to be edited
+    $sql = "SELECT clinic_no_type, clinic_no, BHT_no, general_examination, cardiovascular_system_examination, respiratory_system_examination, nervous_system_examination, abdominal_examination, genito_urinary_examination, limbs_examination from examination WHERE id = '$id'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $BHT_no = $row['BHT_no'];
+        $clinic_no_type = $row['clinic_no_type'];
+        $clinic_no = $row['clinic_no'];
+        $BHT_no = $row['BHT_no'];
+        $general_examination = $row['general_examination'];
+        $cardiovascular_system_examination = $row['cardiovascular_system_examination'];
+        $respiratory_system_examination = $row['respiratory_system_examination'];
+        $nervous_system_examination = $row['nervous_system_examination'];
+        $abdominal_examination = $row['abdominal_examination'];
+        $genito_urinary_examination = $row['genito_urinary_examination'];
+        $limbs_examination = $row['limbs_examination'];
+
+    } else {
+        $conn->close();
+        die();
+    }
 }
-$role_id=$_SESSION['psc_user_role_id'];
-
-//data con
-require_once("../../common/dbconnection_inc.php"); 
-$sql="SELECT * FROM user_role";
-$result=mysqli_query($conn,$sql);
-$sql="SELECT * FROM user_title";
-$result1=mysqli_query($conn,$sql);
-?> 
-
+?>
 
 <html>
     <head> 

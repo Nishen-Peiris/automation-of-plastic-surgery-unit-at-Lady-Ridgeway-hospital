@@ -20,7 +20,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the word registration relation
-$sql = "SELECT id, BHT_no, word_number, patient_name, DOB, age, tp_number, gender, address FROM word_registration LIMIT $offset, $rec_limit";
+$sql = "SELECT id, BHT_no, word_number, patient_name, DOB, age, tp_number, gender, address, status FROM word_registration LIMIT $offset, $rec_limit";
 $word_reg_data = $conn->query($sql);
 ?>
 <html>
@@ -123,6 +123,7 @@ $word_reg_data = $conn->query($sql);
                                     <td>
                                         <?php
                                         echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                        echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"activateRecord.php?id=$id\">Deactivate</a>";
                                         ?>
                                     </td>
                                 </tr>

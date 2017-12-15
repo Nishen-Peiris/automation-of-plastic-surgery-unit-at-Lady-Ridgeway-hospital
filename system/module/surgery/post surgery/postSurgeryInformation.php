@@ -20,7 +20,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the pre_surgery relation
-$sql = "SELECT id, BHT_no, photograph, complications, post_surgery_investigations, date_of_discharge, discharge_plan FROM post_surgery LIMIT $offset, $rec_limit";
+$sql = "SELECT id, BHT_no, photograph, complications, post_surgery_investigations, date_of_discharge, discharge_plan, status FROM post_surgery LIMIT $offset, $rec_limit";
 $post_surgery_data = $conn->query($sql);
 ?>
 
@@ -105,7 +105,7 @@ $post_surgery_data = $conn->query($sql);
                             ?>
                             <tr>
                                 <td><?php echo $row["BHT_no"]; ?></td>
-                                <td><?php echo $row["photograph"]; ?></td>
+                                <td><img src="../../uploads/<?php echo $row['photograph']; ?>"  class="img-responsive" height="100px" width="100px" /></td>
                                 <td><?php echo $row["complications"]; ?></td>
                                 <td><?php echo $row["post_surgery_investigations"]; ?></td>
                                 <td><?php echo $row["date_of_discharge"]; ?></td>
@@ -113,6 +113,7 @@ $post_surgery_data = $conn->query($sql);
                                 <td>
                                     <?php
                                     echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                    echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"activateRecord.php?id=$id\">Deactivate</a>";
                                     ?>
                                 </td>
                             </tr>

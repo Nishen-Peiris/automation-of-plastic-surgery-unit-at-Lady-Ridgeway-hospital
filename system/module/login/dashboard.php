@@ -105,7 +105,19 @@ $role_id = $_SESSION['psc_user_role_id']
 
                     &nbsp;
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-2">&nbsp;</div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <p class="ali">
+                        <a class="font" href="../reports/reports.php">
+                            <img src="../../images/title.png"
+                                 width="75" height="75"/>
+                            <br/>
+                            Reports
+                        </a>
+                    </p>
+
+                    &nbsp;
+                </div>
+
                 <div class="col-lg-2 col-md-2 col-sm-2">
                     <p class="ali">
                         <a class="font" href="../examination/examination.php">
@@ -160,18 +172,7 @@ $role_id = $_SESSION['psc_user_role_id']
                 &nbsp;
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1">&nbsp;</div>
-            <div class="col-lg-2 col-md-2 col-sm-2">
-                <p class="ali">
-                    <a class="font" href="../reports/reports.php">
-                        <img src="../../images/userManagement.png"
-                             width="75" height="75"/>
-                        <br/>
-                        Reports
-                    </a>
-                </p>
 
-                &nbsp;
-            </div>
 
             <div style="clear:both">&nbsp;</div>
 
