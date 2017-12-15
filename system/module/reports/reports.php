@@ -72,15 +72,31 @@
                 district |
                 <button type="button" onclick="executeQuery1()">Show</button>
             </form>
+            <!-- Filter permanently registered patients by year -->
             <form name="form2">
                 Permanently registered patients in the year
                 <input type="number" id="year" name="year" min="1950" max="2099" step="1" value="2017"/> |
                 <button type="button" onclick="executeQuery2()">Show</button>
             </form>
+            <!-- Filter permanently registered patients by month -->
             <form name="form3">
                 Permanently registered patients in the month
                 <input type="month" id="month" name="month"/> |
                 <button type="button" onclick="executeQuery3()">Show</button>
+            </form>
+            <!-- Filter pre-surgery records by reason for surgery -->
+            <form name="form4">
+                Reason for surgery:
+                <select id="reason_for_surgery_type" name="reason_for_surgery_type"
+                        onchange="reasonForSurgeryChanged(this.value)">
+                    <option value="Congenital">Congenital</option>
+                    <option value="Acquired" selected="selected">Acquired</option>
+                </select>
+                <select id="reason_for_surgery" name="reason_for_surgery">
+                    <option value="Primary" selected="selected">Primary</option>
+                    <option value="Secondary">Secondary</option>
+                </select>
+                <button type="button" onclick="executeQuery4()">Show</button>
             </form>
             <!-- Display filter result in the below div -->
             <div id="results">
@@ -95,6 +111,15 @@
 </html>
 
 <script type="text/javascript">
+    // Show / hide Primary and Secondary options
+    function reasonForSurgeryChanged(reason_for_surgery) {
+        if (reason_for_surgery == "Acquired") {
+            document.getElementById("reason_for_surgery").hidden = false;
+        } else {
+            document.getElementById("reason_for_surgery").hidden = true;
+        }
+    }
+
     // Function: filter permanently registered patients by district
     function executeQuery1() {
         var district = document.form1.district.value;
@@ -152,6 +177,27 @@
             }
         };
         xmlhttp.open("GET", "queries/3.php?month=" + month, true);
+        xmlhttp.send();
+    }
+
+    // Function: filter pre-surgery records by reason for surgery
+    function executeQuery4() {
+        var reason_for_surgery_type = document.form4.reason_for_surgery_type.value;
+        var reason_for_surgery = document.form4.reason_for_surgery.value;
+
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("results").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "queries/4.php?reason_for_surgery_type=" + reason_for_surgery_type + "&reason_for_surgery=" + reason_for_surgery, true);
         xmlhttp.send();
     }
 </script>
