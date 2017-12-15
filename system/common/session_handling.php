@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 //Session Handling
 if ($_SESSION['psc_session_id'] == "") {
     $msg = "Please Login";
-    header("Location:../login/index.php?msg=$msg");
+    header("Location:../../login/index.php?msg=$msg");
 }
 
 
@@ -15,6 +15,6 @@ if ($_SESSION['psc_session_id'] == "") {
 if (isset($_SESSION)) {
     if ($_SESSION['psc_session_id'] == "") {
         $msg = "Please Login";
-        header("Location:../login/index.php?msg=$msg");
+        header("Location:../../login/index.php?msg=$msg");
     }
 }

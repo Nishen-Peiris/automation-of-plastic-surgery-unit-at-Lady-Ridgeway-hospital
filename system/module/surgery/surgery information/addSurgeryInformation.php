@@ -1,3 +1,14 @@
+<?php
+include_once "../../../../system/common/session_handling.php";
+
+$psc_user_role_id = $_SESSION['psc_user_role_id']; // retrieve user role id from the session
+// user need to be house officer or above to perform this action
+if ($psc_user_role_id >= 6) {
+    $msg = "You don't have enough permission to perform this action!";
+    header("Location:../../login/index.php?msg=$msg");
+}
+?>
+
 <html>
 <head>
     <title>Automation of Plastic Surgery Unit at Lady Ridgeway Hospital</title>
@@ -9,7 +20,7 @@
     <script type="text/javascript" src="../../../js/jquery-1.8.3.min.js">
     </script>
     <script type="text/javascript">
-         //Ajax for role Rights
+        //Ajax for role Rights
         function showRights(str) {
             var xmlhttp;
             if (str == "") {
@@ -183,9 +194,9 @@
                 Assisted by :
             </div>
             <div class="col-lg-3 col-sm-3 col-md-3">
-                <input id="assistedBy1"  class="form-control" name="assisted_by_1" type="text" required="required">
-                <input id="assistedBy2"  class="form-control" name="assisted_by_2" type="text">
-                <input id="assistedBy3"  class="form-control" name="assisted_by_3" type="text">
+                <input id="assistedBy1" class="form-control" name="assisted_by_1" type="text" required="required">
+                <input id="assistedBy2" class="form-control" name="assisted_by_2" type="text">
+                <input id="assistedBy3" class="form-control" name="assisted_by_3" type="text">
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>

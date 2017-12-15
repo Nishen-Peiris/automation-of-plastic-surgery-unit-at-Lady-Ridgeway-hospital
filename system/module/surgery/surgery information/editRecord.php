@@ -8,6 +8,13 @@
 include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 
+$psc_user_role_id = $_SESSION['psc_user_role_id']; // retrieve user role id from the session
+// user need to be house officer or above to perform this action
+if ($psc_user_role_id >= 6) {
+    $msg = "You don't have enough permission to perform this action!";
+    header("Location:../../login/index.php?msg=$msg");
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // get data from post
     $id = $_POST{'id'};
@@ -30,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     ?>
     <script type="text/javascript">
-                window.alert("<?php echo $alert; ?>");
-                window.location.href = "../../../module/surgery/surgery information/surgeryInformation.php"
+        window.alert("<?php echo $alert; ?>");
+        window.location.href = "../../../module/surgery/surgery information/surgeryInformation.php"
     </script>
     <?php
     $conn->close();

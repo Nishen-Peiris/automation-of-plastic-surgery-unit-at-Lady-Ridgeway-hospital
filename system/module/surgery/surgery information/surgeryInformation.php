@@ -2,8 +2,10 @@
 include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 
-$userinfo = $_SESSION['userinfo'];
+$psc_user_role_id = $_SESSION['psc_user_role_id'];
 $role_id = $userinfo['role_id'];
+
+echo $psc_user_role_id;
 
 $rec_limit = 10; // no. of records per page
 if (isset($_GET{'page'})) {

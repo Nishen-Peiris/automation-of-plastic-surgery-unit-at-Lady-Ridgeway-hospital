@@ -41,6 +41,7 @@ $role_id = $_SESSION['psc_user_role_id']
         <div>
             <?php
             //Start Admin
+            $role_id = 1; // all roles can access this page
             if ($role_id == 1) { ?>
             <div class="row">
 
