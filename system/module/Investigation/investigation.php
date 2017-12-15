@@ -1,6 +1,6 @@
 <?php
-include_once "../../../../system/common/session_handling.php";
-include_once "../../../../system/common/dbconnection_inc.php";
+include_once "../../../system/common/session_handling.php";
+include_once "../../../system/common/dbconnection_inc.php";
 
 $userinfo = $_SESSION['userinfo'];
 $role_id = $userinfo['role_id'];
