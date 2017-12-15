@@ -62,7 +62,7 @@ birth_history_deliver = '$birth_history_deliver', birth_history_mode_of_delivery
     ?>
     <script type="text/javascript">
         window.alert("<?php echo $alert; ?>");
-        window.location.href = "examination.php"
+        window.location.href = "history.php"
     </script>
     <?php
     $conn->close();
@@ -192,6 +192,7 @@ birth_history_deliver = '$birth_history_deliver', birth_history_mode_of_delivery
     <!-------------------- History form -------------------->
     <form name="EditHistory" method="post" action="editRecord.php"
           enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<?php echo $id; ?>"/>
         <div class="row">
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">
