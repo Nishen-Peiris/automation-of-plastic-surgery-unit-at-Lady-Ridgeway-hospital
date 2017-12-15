@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ChaThUrikA
- * Date: 12/11/2017
- * Time: 7:56 PM
- */
+
 include_once "../../../../system/common/session_handling.php";
 include_once "../../../../system/common/dbconnection_inc.php";
 

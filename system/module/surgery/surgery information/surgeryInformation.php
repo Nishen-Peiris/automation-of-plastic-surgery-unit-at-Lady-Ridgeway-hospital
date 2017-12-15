@@ -47,7 +47,7 @@ $surgery_data = $conn->query($sql);
             <div>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="../login/dashboard.php">
+                        <a href="../../login/dashboard.php">
                             Dashboard </a></li>
                     <li><a href="../../surgery/surgery.php">Surgery</a></li>
                     <li class="active"><font color="#096dac">Surgery</font></li>

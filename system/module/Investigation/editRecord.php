@@ -16,19 +16,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $BHT_no = $_POST['BHT_no'];
     $admission_date = $_POST['admission_date'];
     $blood_group = $_POST['blood_group'];
-    $x_ray = $_POST['x_ray'];
-    $echo = $_POST['echo'];
-    $ultra_sound = $_POST['ultra_sound'];
-    $CT = $_POST['CT'];
-    $MRI = $_POST['MRI'];
-    $fbc_report = $_POST['fbc_report'];
-    $x_ray_report = $_POST['x_ray_report'];
-    $echo_report = $_POST['echo_report'];
-    $ultra_sound_report = $_POST['ultra_sound_report'];
-    $CT_report = $_POST['CT_report'];
-    $MRI_report = $_POST['MRI_report'];
-    $ECG_report = $_POST['ECG_report'];
 
+
+    if (isset($_POST['x_ray'])) {
+        $x_ray = $_POST['x_ray'];
+    } else {
+        $x_ray = 0;
+    }
+    if (isset($_POST['echo'])) {
+        $echo = $_POST['echo'];
+    } else {
+        $echo = 0;
+    }
+    if (isset($_POST['ultra_sound'])) {
+        $ultra_sound = $_POST['ultra_sound'];
+    } else {
+        $ultra_sound = 0;
+    }
+    if (isset($_POST['CT'])) {
+        $CT = $_POST['CT'];
+    } else {
+        $CT = 0;
+    }
+    if (isset($_POST['MRI'])) {
+        $MRI = $_POST['MRI'];
+    } else {
+        $MRI = 0;
+    }
     //upload files
     $fbc_report = $_FILES['fbc_report']['name'];
     $file_loc = $_FILES['fbc_report']['tmp_name'];
@@ -65,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $folder="../uploads/";
     move_uploaded_file($file_loc,$folder.$ECG_report);
 
-    $sql = "UPDATE investigation set clinic_no_type = '$clinic_no_type', clinic_no = '$clinic_no', BHT_no = '$BHT_no', admission_date = '$admission_date', blood_group = '$blood_group', x_ray = '$x_ray', echo = '$echo', ultra_sound = '$ultra_sound', CT = '$CT', MRI = '$MRI', fbc_report = '$fbc_report', x_ray_report = '$x_ray_report', echo_report = '$echo_report', ultra_sound_report = '$ultra_sound_report', CT_report = '$CT_report', MRI_report = '$MRI_report', ECG_report = '$ECG_report' WHERE id = '$id'";
+    $sql = "UPDATE investigation set clinic_no_type = '$clinic_no_type', clinic_no = '$clinic_no', BHT_no = '$BHT_no', admission_date = '$admission_date', blood_group = '$blood_group', x_ray = $x_ray, echo = $echo, ultra_sound = $ultra_sound, CT = $CT, MRI = $MRI, fbc_report = '$fbc_report', x_ray_report = '$x_ray_report', echo_report = '$echo_report', ultra_sound_report = '$ultra_sound_report', CT_report = '$CT_report', MRI_report = '$MRI_report', ECG_report = '$ECG_report' WHERE id = '$id'";
     if ($conn->query($sql) == TRUE) {
         $alert = "Record updated.";
     } else {

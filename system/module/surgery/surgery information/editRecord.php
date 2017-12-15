@@ -219,6 +219,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     Local
                     <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
                 </div>
+                <div class="">
+                    <input id="type_of_anesthesia" name="type_of_anesthesia" type="radio"
+                           value="Local" <?php echo ($type_of_anesthesia == "Regional") ? "checked=\"checked\"" : ""; ?>/>
+                    Regional
+                    <div class="col-lg-12 col-sm-12 col-md-12"> &nbsp;</div>
+                </div>
             </div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
             <div class="col-lg-1 col-sm-1 col-md-1">&nbsp;</div>
