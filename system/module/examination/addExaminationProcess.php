@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ChaThUrikA
- * Date: 12/11/2017
- * Time: 6:44 PM
- */
+
 /******************** All the field names of the Examination Relation **************************/
 //id
 //clinic_no_type

@@ -20,7 +20,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the examination relation
-$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, general_examination, cardiovascular_system_examination, respiratory_system_examination, nervous_system_examination, abdominal_examination, genito_urinary_examination, limbs_examination FROM examination LIMIT $offset, $rec_limit";
+$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, general_examination, cardiovascular_system_examination, respiratory_system_examination, nervous_system_examination, abdominal_examination, genito_urinary_examination, limbs_examination, status FROM examination LIMIT $offset, $rec_limit";
 $examination_data = $conn->query($sql);
 ?>
 <html>
@@ -126,6 +126,7 @@ $examination_data = $conn->query($sql);
                                     <td>
                                         <?php
                                         echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                        echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=\"activateRecord.php?id=$id\">Deactivate</a>";
                                         ?>
                                     </td>
                                 </tr>

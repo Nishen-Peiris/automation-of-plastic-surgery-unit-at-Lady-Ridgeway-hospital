@@ -12,11 +12,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // get data from post
     $id = $_POST{'id'};
     $BHT_no = $_POST['BHT_no'];
-    $photograph = $_POST['photograph'];
     $complications = $_POST['complications'];
     $post_surgery_investigations = $_POST['post_surgery_investigations'];
     $date_of_discharge = $_POST['date_of_discharge'];
     $discharge_plan = $_POST['discharge_plan'];
+
+    //upload files
+    $photograph = $_FILES['photograph']['name'];
+    $file_loc = $_FILES['photograph']['tmp_name'];
+    $folder="../uploads/";
+    move_uploaded_file($file_loc,$folder.$photograph);
 
     $sql = "UPDATE post_surgery set BHT_no = '$BHT_no', photograph = '$photograph', complications = '$complications', post_surgery_investigations = '$post_surgery_investigations', date_of_discharge = '$date_of_discharge', discharge_plan = '$discharge_plan' WHERE id = '$id'";
     if ($conn->query($sql) == TRUE) {

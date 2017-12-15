@@ -94,14 +94,14 @@ function checkForm(){
          <li class="font1" class="active">Add User</li>
                     </ol>
                    
-                    <h3 align="center">Add <small class="font1">User</small></h3>
+                    <h3 align="center">Add User</h3>
                     
                 </div>
                 <HR />
                 <div>
                     <style type="text/css"> #msg{color:#F00; font-style:italic;} </style>
                    <!--Start Table-->
-                   <form name="addUser" method="post" action="adduserprocess" onsubmit="return checkForm()">
+                   <form name="addUser" method="post" action="adduserprocess.php" onsubmit="return checkForm()">
                        <div class="row">
                        <div><span id="msg"></span> &nbsp;</div>
                        </div>   

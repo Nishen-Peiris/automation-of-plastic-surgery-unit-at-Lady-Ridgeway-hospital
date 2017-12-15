@@ -28,7 +28,7 @@ $result = $conn->query($sql_to_count_the_total_number_of_records);
 $rec_count = $result->num_rows;
 
 // load data from the pre_surgery relation
-$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, presenting_complain, past_medical_history, past_surgical_history, allergic_history, drug_history, diet_history, birth_history_birth_weight, birth_history_deliver, birth_history_mode_of_delivery, birth_history_mode_of_delivery_status, birth_history_post_natal_complication, other_history_family_history_consanguineous, other_history_family_history_consanguineous_status, other_history_family_history_family_diseases, other_history_family_history_family_diseases_status, immunization_history_BCG, immunization_history_BCG_2, immunization_history_penta_1, immunization_history_OPV_1, immunization_history_penta_2, immunization_history_OPV_2, immunization_history_IPV,  immunization_history_penta_3, immunization_history_OPV_3, immunization_history_MMR_1, immunization_history_JE, immunization_history_DPT, immunization_history_OPV_4, immunization_history_MMR_2, immunization_history_DT, immunization_history_OPV_5, immunization_history_adult_tetanus FROM history LIMIT $offset, $rec_limit";
+$sql = "SELECT id, clinic_no_type, clinic_no, BHT_no, presenting_complain, past_medical_history, past_surgical_history, allergic_history, drug_history, diet_history, birth_history_birth_weight, birth_history_deliver, birth_history_mode_of_delivery, birth_history_mode_of_delivery_status, birth_history_post_natal_complication, other_history_family_history_consanguineous, other_history_family_history_consanguineous_status, other_history_family_history_family_diseases, other_history_family_history_family_diseases_status, immunization_history_BCG, immunization_history_BCG_2, immunization_history_penta_1, immunization_history_OPV_1, immunization_history_penta_2, immunization_history_OPV_2, immunization_history_IPV,  immunization_history_penta_3, immunization_history_OPV_3, immunization_history_MMR_1, immunization_history_JE, immunization_history_DPT, immunization_history_OPV_4, immunization_history_MMR_2, immunization_history_DT, immunization_history_OPV_5, immunization_history_adult_tetanus, status FROM history LIMIT $offset, $rec_limit";
 $history_data = $conn->query($sql);
 ?>
 
@@ -182,6 +182,8 @@ $history_data = $conn->query($sql);
                                 <td>
                                     <?php
                                     echo "<a class='btn btn-success btn-sm' style='margin-bottom: 5px;' href=\"editRecord.php?id=$id\">Edit </a><br> ";
+                                    echo ($row["status"] == "Deactive") ? "<a class='btn btn-primary btn-sm' href=\"activateRecord.php?id=$id\">Activate</a>" : "<a class='btn btn-danger btn-sm' href=
+\"activateRecord.php?id=$id\">Deactivate</a>";
                                     ?>
                                 </td>
                             </tr>
