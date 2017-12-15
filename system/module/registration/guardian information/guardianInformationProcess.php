@@ -40,7 +40,7 @@ $sql = "INSERT INTO guardian_information " .
 if ($conn->query($sql) === TRUE) {
     $alert = "New record created successfully";
 } else {
-    $alert = "Error: " . $conn->error . $sql;
+    $alert = "Error occured while creating the new record.";
 }
 $conn->close();
 ?>
